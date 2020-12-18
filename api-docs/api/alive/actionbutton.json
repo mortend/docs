@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -491,10 +491,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ActionButton : Fuse.Controls.Panel {}"
-    },
-    "comment": {
-      "brief": "A Material Design-like floating action button.",
-      "full": "A Material Design-like floating action button."
     }
   },
   "tableOfContents": {

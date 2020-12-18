@@ -4,7 +4,7 @@
       "namespaceTitle": "Uno.Diagnostics",
       "namespaceUri": "uno/diagnostics",
       "packageName": "UnoCore",
-      "packageVersion": "1.11.1"
+      "packageVersion": "2.0.0-beta.7"
     },
     "id": {
       "id": "uno/diagnostics/debug",
@@ -34,72 +34,6 @@
     "methods": [
       {
         "items": [
-          {
-            "parameters": [
-              {
-                "name": "message",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              }
-            ],
-            "id": {
-              "id": "uno/diagnostics/debug/alert_968f99a6",
-              "parentId": "uno/diagnostics/debug",
-              "type": "Method",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "uno/diagnostics/debug/alert_968f99a6",
-              "href": "uno/diagnostics/debug/alert_968f99a6"
-            },
-            "titles": {
-              "indexTitle": "Alert(string)",
-              "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.Alert(string)"
-            }
-          },
-          {
-            "parameters": [
-              {
-                "name": "message",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              },
-              {
-                "name": "caption",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              },
-              {
-                "name": "type",
-                "href": "uno/diagnostics/debugmessagetype",
-                "title": "DebugMessageType",
-                "fullyQualifiedTitle": "Uno.Diagnostics.DebugMessageType"
-              }
-            ],
-            "id": {
-              "id": "uno/diagnostics/debug/alert_04f22801",
-              "parentId": "uno/diagnostics/debug",
-              "type": "Method",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "uno/diagnostics/debug/alert_04f22801",
-              "href": "uno/diagnostics/debug/alert_04f22801"
-            },
-            "titles": {
-              "indexTitle": "Alert(string, string, DebugMessageType)",
-              "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.Alert(string, string, Uno.Diagnostics.DebugMessageType)"
-            }
-          },
           {
             "parameters": [
               {
@@ -149,82 +83,6 @@
             "titles": {
               "indexTitle": "Assert(bool, string, string, int, object[])",
               "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.Assert(bool, string, string, int, object[])"
-            }
-          },
-          {
-            "returns": {
-              "href": "uno/bool",
-              "title": "bool",
-              "fullyQualifiedTitle": "bool"
-            },
-            "parameters": [
-              {
-                "name": "message",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              }
-            ],
-            "id": {
-              "id": "uno/diagnostics/debug/confirm_968f99a6",
-              "parentId": "uno/diagnostics/debug",
-              "type": "Method",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "uno/diagnostics/debug/confirm_968f99a6",
-              "href": "uno/diagnostics/debug/confirm_968f99a6"
-            },
-            "titles": {
-              "indexTitle": "Confirm(string)",
-              "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.Confirm(string)"
-            }
-          },
-          {
-            "returns": {
-              "href": "uno/bool",
-              "title": "bool",
-              "fullyQualifiedTitle": "bool"
-            },
-            "parameters": [
-              {
-                "name": "message",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              },
-              {
-                "name": "caption",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              },
-              {
-                "name": "type",
-                "href": "uno/diagnostics/debugmessagetype",
-                "title": "DebugMessageType",
-                "fullyQualifiedTitle": "Uno.Diagnostics.DebugMessageType"
-              }
-            ],
-            "id": {
-              "id": "uno/diagnostics/debug/confirm_04f22801",
-              "parentId": "uno/diagnostics/debug",
-              "type": "Method",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "uno/diagnostics/debug/confirm_04f22801",
-              "href": "uno/diagnostics/debug/confirm_04f22801"
-            },
-            "titles": {
-              "indexTitle": "Confirm(string, string, DebugMessageType)",
-              "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.Confirm(string, string, Uno.Diagnostics.DebugMessageType)"
             }
           },
           {

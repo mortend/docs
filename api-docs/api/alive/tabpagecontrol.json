@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class TabPageControl : Fuse.Controls.Container {}"
-    },
-    "comment": {
-      "brief": "Combines a [TabBar](api:alive/tabbar) and a @PageControl.",
-      "full": "Combines a [TabBar](api:alive/tabbar) and a @PageControl.\n\n    <TabPageControl>\n        <Alive.TabPage Label=\"Page 1\">\n            <!-- page content -->\n        </Alive.TabPage>\n        <Alive.TabPage Label=\"Page 2\">\n            <!-- page content -->\n        </Alive.TabPage>\n        <Alive.TabPage Label=\"Page 3\">\n            <!-- page content -->\n        </Alive.TabPage>\n    </TabPageControl>"
     }
   },
   "tableOfContents": {

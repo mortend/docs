@@ -19,10 +19,6 @@
   },
   "descendants": [
     {
-      "comment": {
-        "brief": "A slider control.\nHas the same interface as any other @RangeControl, such as the default @Slider.",
-        "full": "A slider control.\nHas the same interface as any other @RangeControl, such as the default @Slider."
-      },
       "id": {
         "id": "alive/slider",
         "parentId": "alive",

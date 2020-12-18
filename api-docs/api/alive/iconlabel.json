@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class IconLabel : Fuse.Controls.DockPanel {}"
-    },
-    "comment": {
-      "brief": "A text label with an [Icon](api:alive/icon) docked to its left.",
-      "full": "A text label with an [Icon](api:alive/icon) docked to its left.\n\nSee [Icon](api:alive/icon) for a list of available icons.\n\n    <Alive.IconLabel Text=\"Delete\" Icon=\"&#xEC45;\" />\n\nYou can specify the icons size using the `IconSize` property.\n\n    <Alive.IconLabel Text=\"Delete\" Icon=\"&#xEC45;\" IconSize=\"48\" />"
     }
   },
   "tableOfContents": {

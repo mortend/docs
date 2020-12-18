@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -491,10 +491,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class BackButton : Fuse.Controls.Panel {}"
-    },
-    "comment": {
-      "brief": "A left-pointing arrow, used in navigation.\n**Note:** this component only provides visuals and does not actually perform navigation.",
-      "full": "A left-pointing arrow, used in navigation.\n**Note:** this component only provides visuals and does not actually perform navigation.\n\n    <Router ux:Name=\"router\" />\n\n    <JavaScript>\n        exports.goBack = function() {\n            router.goBack();\n        }\n    }\n    </JavaScript>\n\n    <Alive.BackButton Clicked=\"{goBack}\" />"
     }
   },
   "tableOfContents": {

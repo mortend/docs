@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -517,10 +517,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ColorBadge : Fuse.Controls.Rectangle {}"
-    },
-    "comment": {
-      "brief": "A horizontal rectangle, generally used to communicate category using color.",
-      "full": "A horizontal rectangle, generally used to communicate category using color.\n\n    <Alive.ColorBadge Color=\"{Resource Alive.Blue}\" />\n\nSee also [Donut](api:alive/donut)."
     }
   },
   "tableOfContents": {

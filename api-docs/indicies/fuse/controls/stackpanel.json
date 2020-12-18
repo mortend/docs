@@ -19,10 +19,6 @@
   },
   "descendants": [
     {
-      "comment": {
-        "brief": "A row of partially overlapping [Bubbles](api:alive/bubble).",
-        "full": "A row of partially overlapping [Bubbles](api:alive/bubble).\n\n    <Alive.Bubbles>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image1.jpg\" />\n        </Alive.Bubble>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image2.jpg\" />\n        </Alive.Bubble>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image3.jpg\" />\n        </Alive.Bubble>\n    </Alive.Bubbles>"
-      },
       "id": {
         "id": "alive/bubbles",
         "parentId": "alive",
@@ -42,10 +38,6 @@
       }
     },
     {
-      "comment": {
-        "brief": "A @StackPanel with the right margins and spacing for text content in a Card.",
-        "full": "A @StackPanel with the right margins and spacing for text content in a Card.\n\n    <Alive.Card>\n        <Alive.CardBody>\n            <Alive.Title>Lorem ipsum</Alive.Title>\n            <Alive.Body>Lorem ipsum dolor sit amet...</Alive.Body>\n        </Alive.CardBody>\n    </Alive.Card>"
-      },
       "id": {
         "id": "alive/cardbody",
         "parentId": "alive",
@@ -65,10 +57,6 @@
       }
     },
     {
-      "comment": {
-        "brief": "A striped list of items, with optional Adding/Removing/LayoutAnimations.",
-        "full": "A striped list of items, with optional Adding/Removing/LayoutAnimations.\n\nListView takes its items directly as a property.\n\n**Note:** `Items` must be an @Observable.\n\n    <JavaScript>\n        var Observable = require(\"FuseJS/Observable\");\n\n        exports.tasks = Observable(\n            { task: \"Groceries\" },\n            { task: \"Finish TPS report\" },\n            { task: \"Purchase boat\" }\n        );\n    </JavaScript>\n\n    <Alive.ListView Items=\"{tasks}\">\n        <Panel Height=\"80\">\n            <Alive.Body Value=\"{task}\" Alignment=\"Center\" />\n        </Panel>\n    </Alive.ListView>\n\nListView applies @AddingAnimation, @RemovingAnimation and @LayoutAnimation to each element by default.\nThis behavior can be disabled using the `IsAnimated` property.\n\n    <Alive.ListView IsAnimated=\"false\" Items=\"{data}\">"
-      },
       "id": {
         "id": "alive/listview",
         "parentId": "alive",
@@ -88,10 +76,6 @@
       }
     },
     {
-      "comment": {
-        "brief": "Presents a header above an element that will stick to the top of its enclosing ScrollView\nwhile in the vertical range of the `StickyHeader`.",
-        "full": "Presents a header above an element that will stick to the top of its enclosing ScrollView\nwhile in the vertical range of the `StickyHeader`.\n\n**Note:** StickyHeader *must* be placed directly inside the ScrollView's root element.\nThis is because `StickyHeader` calculates its own position relative to its parent.\n\n    <ScrollView>\n        <StackPanel>\n            <Alive.StickyHeader>\n                <Panel ux:Binding=\"Header\">\n                    <Alive.Title Margin=\"15\">Header</Alive.Title>\n\n                    <StackPanel ItemSpacing=\"20\" Margin=\"20\">\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                    </StackPanel>\n                </Panel>\n            </Alive.StickyHeader>\n        </StackPanel>\n    </ScrollView>\n\n[MediaScroller](api:alive/mediascroller) wraps a StackPanel around its children,\nand so any StickyHeader must be a direct child of the `MediaScroller` itself.\n\n    <Alive.MediaScroller>\n        <Panel ux:Binding=\"Media\" />\n\n        <Alive.StickyHeader>\n            <Panel ux:Binding=\"Header\">\n                <Alive.Title Margin=\"15\">Header</Alive.Title>\n\n                <!-- content -->\n            </Panel>\n        </Alive.StickyHeader>\n    </Alive.MediaScroller>\n\nSee also @StickyHeaderAnimation"
-      },
       "id": {
         "id": "alive/stickyheader",
         "parentId": "alive",

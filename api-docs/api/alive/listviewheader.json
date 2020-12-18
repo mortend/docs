@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -517,10 +517,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ListViewHeader : Fuse.Controls.Rectangle {}"
-    },
-    "comment": {
-      "brief": "A colored header bar with text, used to display the category of a group of items.",
-      "full": "A colored header bar with text, used to display the category of a group of items."
     }
   },
   "tableOfContents": {

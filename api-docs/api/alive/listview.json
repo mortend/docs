@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ListView : Fuse.Controls.StackPanel {}"
-    },
-    "comment": {
-      "brief": "A striped list of items, with optional Adding/Removing/LayoutAnimations.",
-      "full": "A striped list of items, with optional Adding/Removing/LayoutAnimations.\n\nListView takes its items directly as a property.\n\n**Note:** `Items` must be an @Observable.\n\n    <JavaScript>\n        var Observable = require(\"FuseJS/Observable\");\n\n        exports.tasks = Observable(\n            { task: \"Groceries\" },\n            { task: \"Finish TPS report\" },\n            { task: \"Purchase boat\" }\n        );\n    </JavaScript>\n\n    <Alive.ListView Items=\"{tasks}\">\n        <Panel Height=\"80\">\n            <Alive.Body Value=\"{task}\" Alignment=\"Center\" />\n        </Panel>\n    </Alive.ListView>\n\nListView applies @AddingAnimation, @RemovingAnimation and @LayoutAnimation to each element by default.\nThis behavior can be disabled using the `IsAnimated` property.\n\n    <Alive.ListView IsAnimated=\"false\" Items=\"{data}\">"
     }
   },
   "tableOfContents": {

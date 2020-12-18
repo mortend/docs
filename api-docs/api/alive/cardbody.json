@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class CardBody : Fuse.Controls.StackPanel {}"
-    },
-    "comment": {
-      "brief": "A @StackPanel with the right margins and spacing for text content in a Card.",
-      "full": "A @StackPanel with the right margins and spacing for text content in a Card.\n\n    <Alive.Card>\n        <Alive.CardBody>\n            <Alive.Title>Lorem ipsum</Alive.Title>\n            <Alive.Body>Lorem ipsum dolor sit amet...</Alive.Body>\n        </Alive.CardBody>\n    </Alive.Card>"
     }
   },
   "tableOfContents": {

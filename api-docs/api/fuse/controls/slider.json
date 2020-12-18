@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.Primitives",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -563,7 +563,12 @@
     },
     "comment": {
       "brief": "Displays a slider",
-      "full": "Displays a slider\n\nSlider is a @RangeControl with a simple slider look. This @Control\nwill get the platform native look on mobile export targets when\nused in a @NativeViewHost.\n\n## Example:\n\n    <StackPanel>\n        <Slider Value=\"50\" Minimum=\"0\" Maximum=\"100\" />\n        <NativeViewHost>\n            <Slider Value=\"0.25\" Minimum=\"0\" Maximum=\"1\" />\n        </NativeViewHost>\n    </StackPanel>"
+      "full": "Displays a slider\n\nSlider is a @RangeControl with a simple slider look. This @Control\nwill get the platform native look on mobile export targets when\nused in a @NativeViewHost.\n\n## Example:\n\n    <StackPanel>\n        <Slider Value=\"50\" Minimum=\"0\" Maximum=\"100\" />\n        <NativeViewHost>\n            <Slider Value=\"0.25\" Minimum=\"0\" Maximum=\"1\" />\n        </NativeViewHost>\n    </StackPanel>",
+      "attributes": {
+        "seeAlso": [
+          "Fuse.Controls.RangeControl"
+        ]
+      }
     }
   },
   "tableOfContents": {

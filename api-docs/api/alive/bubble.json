@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -524,10 +524,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class Bubble : Fuse.Controls.Circle {}"
-    },
-    "comment": {
-      "brief": "A bordered circle, generally used for profile images.",
-      "full": "A bordered circle, generally used for profile images.\n\n    <Alive.Bubble>\n        <Alive.ImageFill File=\"Assets/image.jpg\" />\n    </Alive.Bubble>\n\n[Bubbles](api:alive/bubbles) displays a row of partially overlapping Bubbles.\n\n    <Alive.Bubbles>\n        <Each Items=\"{friends}\">\n            <Alive.Bubble>\n                <Alive.ImageFill Url=\"{profileImageUrl}\" />\n            </Alive.Bubble>\n        </Each>\n    </Alive.Bubbles>"
     }
   },
   "tableOfContents": {

@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -481,7 +481,9 @@
       "brief": "A panel that contains a chart.",
       "full": "A panel that contains a chart.",
       "attributes": {
-        "experimental": true
+        "seeAlso": [
+          "Docs/plot.md"
+        ]
       }
     }
   },

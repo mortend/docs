@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class StickyHeader : Fuse.Controls.StackPanel {}"
-    },
-    "comment": {
-      "brief": "Presents a header above an element that will stick to the top of its enclosing ScrollView\nwhile in the vertical range of the `StickyHeader`.",
-      "full": "Presents a header above an element that will stick to the top of its enclosing ScrollView\nwhile in the vertical range of the `StickyHeader`.\n\n**Note:** StickyHeader *must* be placed directly inside the ScrollView's root element.\nThis is because `StickyHeader` calculates its own position relative to its parent.\n\n    <ScrollView>\n        <StackPanel>\n            <Alive.StickyHeader>\n                <Panel ux:Binding=\"Header\">\n                    <Alive.Title Margin=\"15\">Header</Alive.Title>\n\n                    <StackPanel ItemSpacing=\"20\" Margin=\"20\">\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                        <Alive.Body>Content</Alive.Body>\n                    </StackPanel>\n                </Panel>\n            </Alive.StickyHeader>\n        </StackPanel>\n    </ScrollView>\n\n[MediaScroller](api:alive/mediascroller) wraps a StackPanel around its children,\nand so any StickyHeader must be a direct child of the `MediaScroller` itself.\n\n    <Alive.MediaScroller>\n        <Panel ux:Binding=\"Media\" />\n\n        <Alive.StickyHeader>\n            <Panel ux:Binding=\"Header\">\n                <Alive.Title Margin=\"15\">Header</Alive.Title>\n\n                <!-- content -->\n            </Panel>\n        </Alive.StickyHeader>\n    </Alive.MediaScroller>\n\nSee also @StickyHeaderAnimation"
     }
   },
   "tableOfContents": {

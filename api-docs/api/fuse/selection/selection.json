@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Selection",
       "namespaceUri": "fuse/selection",
       "packageName": "Fuse.Selection",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -1929,55 +1929,6 @@
             "titles": {
               "indexTitle": "ToString",
               "fullyQualifiedIndexTitle": "Uno.Object.ToString"
-            }
-          }
-        ]
-      }
-    ],
-    "fields": [
-      {
-        "declaredIn": {
-          "id": {
-            "id": "fuse/selection/selection",
-            "parentId": "fuse/selection",
-            "type": "UxClass",
-            "modifiers": [
-              "public",
-              "partial"
-            ]
-          },
-          "uri": {
-            "idUri": "fuse/selection/selection",
-            "href": "fuse/selection/selection"
-          },
-          "titles": {
-            "indexTitle": "Selection",
-            "fullyQualifiedIndexTitle": "Fuse.Selection.Selection"
-          }
-        },
-        "items": [
-          {
-            "returns": {
-              "href": "uno/ux/selector",
-              "title": "Selector",
-              "fullyQualifiedTitle": "Uno.UX.Selector"
-            },
-            "id": {
-              "id": "fuse/selection/selection/valuename",
-              "parentId": "fuse/selection/selection",
-              "type": "Field",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/selection/selection/valuename",
-              "href": "fuse/selection/selection/valuename"
-            },
-            "titles": {
-              "indexTitle": "ValueName",
-              "fullyQualifiedIndexTitle": "Fuse.Selection.Selection.ValueName"
             }
           }
         ]

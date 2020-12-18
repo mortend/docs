@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class Bubbles : Fuse.Controls.StackPanel {}"
-    },
-    "comment": {
-      "brief": "A row of partially overlapping [Bubbles](api:alive/bubble).",
-      "full": "A row of partially overlapping [Bubbles](api:alive/bubble).\n\n    <Alive.Bubbles>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image1.jpg\" />\n        </Alive.Bubble>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image2.jpg\" />\n        </Alive.Bubble>\n        <Alive.Bubble>\n            <Alive.ImageFill File=\"image3.jpg\" />\n        </Alive.Bubble>\n    </Alive.Bubbles>"
     }
   },
   "tableOfContents": {

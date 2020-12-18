@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.Navigation",
       "namespaceUri": "fuse/navigation",
       "packageName": "Fuse.Navigation",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -135,7 +135,12 @@
     },
     "comment": {
       "brief": "Push a new route onto the router.",
-      "full": "Push a new route onto the router.\n\nThis is the same as @RouterModify with `How=\"Push\"`"
+      "full": "Push a new route onto the router.\n\nThis is the same as @RouterModify with `How=\"Push\"`",
+      "attributes": {
+        "seeAlso": [
+          "RouterModify"
+        ]
+      }
     }
   },
   "tableOfContents": {

@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -497,10 +497,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class FlatCarousel : Fuse.Controls.Container {}"
-    },
-    "comment": {
-      "brief": "A flat carousel component.",
-      "full": "A flat carousel component.\n\nSee [FlatCarouselPage](api:alive/flatcarouselpage) for more on individual page layout.\n\n    <Alive.FlatCarousel>\n        <Alive.FlatCarouselPage Title=\"Page 1\">\n            <Image File=\"image.jpg\" StretchMode=\"UniformToFill\" />\n        </Alive.FlatCarouselPage>\n        <Alive.FlatCarouselPage Title=\"Page 2\" Subtitle=\"Yeah!\">\n            <Image File=\"image.jpg\" StretchMode=\"UniformToFill\" />\n        </Alive.FlatCarouselPage>\n    </Alive.FlatCarousel>\n\nSee also [Carousel](api:alive/carousel)."
     }
   },
   "tableOfContents": {

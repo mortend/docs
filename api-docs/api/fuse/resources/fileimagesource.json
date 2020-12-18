@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Resources",
       "namespaceUri": "fuse/resources",
       "packageName": "Fuse.Elements",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -626,6 +626,31 @@
           }
         },
         "items": [
+          {
+            "returns": {
+              "href": "uno/byte",
+              "title": "byte[]",
+              "fullyQualifiedTitle": "byte[]"
+            },
+            "id": {
+              "id": "fuse/resources/fileimagesource/getbytes",
+              "parentId": "fuse/resources/fileimagesource",
+              "type": "Method",
+              "modifiers": [
+                "public",
+                "abstract"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/resources/fileimagesource/getbytes",
+              "href": "fuse/resources/imagesource/getbytes",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "GetBytes",
+              "fullyQualifiedIndexTitle": "Fuse.Resources.ImageSource.GetBytes"
+            }
+          },
           {
             "returns": {
               "href": "uno/graphics/texture2d",

@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.Primitives",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "parameters": [],
     "returns": {
@@ -37,12 +37,7 @@
     },
     "comment": {
       "brief": "Minimum value of the RangeControl. Defaults to 0",
-      "full": "Minimum value of the RangeControl. Defaults to 0\n\nThis is the left/top value of the RangeControl and may be a value larger than Maximum.",
-      "attributes": {
-        "seeAlso": [
-          "Range"
-        ]
-      }
+      "full": "Minimum value of the RangeControl. Defaults to 0\n\nThis is the left/top value of the RangeControl and may be a value larger than Maximum."
     }
   },
   "tableOfContents": {}

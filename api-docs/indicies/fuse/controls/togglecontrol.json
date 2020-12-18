@@ -19,10 +19,6 @@
   },
   "descendants": [
     {
-      "comment": {
-        "brief": "A Switch control that can be swiped.\nHas the same interface as any other @ToggleControl, such as the default @Switch.",
-        "full": "A Switch control that can be swiped.\nHas the same interface as any other @ToggleControl, such as the default @Switch."
-      },
       "id": {
         "id": "alive/switch",
         "parentId": "alive",

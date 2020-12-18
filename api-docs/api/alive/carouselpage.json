@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -491,10 +491,6 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class CarouselPage : Fuse.Controls.Panel {}"
-    },
-    "comment": {
-      "brief": "A page in a [Carousel](api:alive/carousel).\nProvides no visuals, only animation.",
-      "full": "A page in a [Carousel](api:alive/carousel).\nProvides no visuals, only animation.\n\n    <Alive.Carousel>\n        <Alive.CarouselPage>\n            <Alive.Card>\n                <Alive.ImageFill File=\"image11.jpg\" />\n            </Alive.Card>\n        </Alive.CarouselPage>\n        <Alive.CarouselPage>\n            <Alive.Card>\n                <Alive.ImageFill File=\"image2.jpg\" />\n            </Alive.Card>\n        </Alive.CarouselPage>\n        <Alive.CarouselPage>\n            <Alive.Card>\n                <Alive.ImageFill File=\"image3.jpg\" />\n            </Alive.Card>\n        </Alive.CarouselPage>\n    </Alive.Carousel>"
     }
   },
   "tableOfContents": {

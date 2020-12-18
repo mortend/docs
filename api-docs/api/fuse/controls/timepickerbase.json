@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.TimePicker",
-      "packageVersion": "1.11.2"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
@@ -522,6 +522,33 @@
             "titles": {
               "indexTitle": "Is24HourView",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TimePickerBase.Is24HourView"
+            }
+          },
+          {
+            "comment": {
+              "brief": "TimePicker style",
+              "full": "TimePicker style"
+            },
+            "returns": {
+              "href": "fuse/controls/timepickerstyle",
+              "title": "TimePickerStyle",
+              "fullyQualifiedTitle": "Fuse.Controls.TimePickerStyle"
+            },
+            "id": {
+              "id": "fuse/controls/timepickerbase/style",
+              "parentId": "fuse/controls/timepickerbase",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/timepickerbase/style",
+              "href": "fuse/controls/timepickerbase/style"
+            },
+            "titles": {
+              "indexTitle": "Style",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TimePickerBase.Style"
             }
           },
           {
@@ -3492,6 +3519,38 @@
             "titles": {
               "indexTitle": "SetIs24HourView(bool, IPropertyListener)",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TimePickerBase.SetIs24HourView(bool, Uno.UX.IPropertyListener)"
+            }
+          },
+          {
+            "parameters": [
+              {
+                "name": "value",
+                "href": "fuse/controls/timepickerstyle",
+                "title": "TimePickerStyle",
+                "fullyQualifiedTitle": "Fuse.Controls.TimePickerStyle"
+              },
+              {
+                "name": "origin",
+                "href": "uno/ux/ipropertylistener",
+                "title": "IPropertyListener",
+                "fullyQualifiedTitle": "Uno.UX.IPropertyListener"
+              }
+            ],
+            "id": {
+              "id": "fuse/controls/timepickerbase/setstyle_e9d37c0c",
+              "parentId": "fuse/controls/timepickerbase",
+              "type": "Method",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/timepickerbase/setstyle_e9d37c0c",
+              "href": "fuse/controls/timepickerbase/setstyle_e9d37c0c"
+            },
+            "titles": {
+              "indexTitle": "SetStyle(TimePickerStyle, IPropertyListener)",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TimePickerBase.SetStyle(Fuse.Controls.TimePickerStyle, Uno.UX.IPropertyListener)"
             }
           },
           {
