@@ -38,7 +38,7 @@ Then, use the preview menu to start previewing on your device(s):
 ![Preview menu](../../media/preview-menu.png)
 
 > We can also preview on device from the command line:
-> `fuse preview -tios` or `fuse preview -tandroid`
+> `fuse preview ios` or `fuse preview android`
 
 The USB connection is only needed when initially building and installing the preview app to the phone. Once the preview app is installed, you don't need the USB connection. The preview app can be restarted as many times as you need on the phone. The app remembers the local IP address of the computer that built the preview app, and will connect wirelessly. This allows you to run preview with as many devices as you want during development.
 
@@ -162,7 +162,7 @@ Now that your app has at least one feature of (questionable) value, it is time t
 From the command line you do this by typing
 
 ```sh
-	fuse build --target=<iOS or Android> --run
+	uno build <ios or android> --run
 ```
 
 ### Okay, that was easy! What's next?

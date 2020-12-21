@@ -488,7 +488,7 @@ The name of the java package to use for Android export. Defaults to `$(QIdentifi
 
 #### Android.PreviewPackage
 The name of the java package to use for Android export in preview mode. Defaults to `Android.Package`.
-It's only used during `fuse preview -t=android`, to differentiate between a normal package and a preview package.
+It's only used during `fuse preview android`, to differentiate between a normal package and a preview package.
 Use this setting if you want to have both a preview version and an exported version of your app installed on the device simultaneously.
 
 ```json
@@ -602,7 +602,7 @@ Corresponds to [CFBundleIdentifier](https://developer.apple.com/library/ios/docu
 
 #### iOS.PreviewBundleIdentifier
 The iOS bundle identifier in preview mode. Defaults to `iOS.BundleIdentifier`.
-It's only used during `fuse preview -t=iOS`, to differentiate between a normal bundle and a preview bundle.
+It's only used during `fuse preview ios`, to differentiate between a normal bundle and a preview bundle.
 Use this setting if you want to have both a preview version and an exported version of your app installed on the device simultaneously.
 
 ```json

@@ -89,9 +89,9 @@ Press `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Windows) to bring up the command 
 In your terminal, `cd` to the your project's directory, and run the command that corresponds to your build target.
 
 ```sh
-fuse preview -t=Android
-fuse preview -t=iOS
-fuse preview -t=Local   # The -t=Local flag is optional in this case
+fuse preview android
+fuse preview ios
+fuse preview local   # The 'local' argument is optional in this case
 ```
 
 We can get further documentation on `fuse preview` by running `fuse help preview`.
@@ -107,7 +107,7 @@ The simplest way to export is to use the "Export" menu in Fuse. However, the com
 In the project root, run the following command in your shell:
 
 ```sh
-fuse build --target=Android --run
+uno build android --run
 ```
 
 This will deploy and start the project on your connected Android device.
@@ -115,7 +115,7 @@ This will deploy and start the project on your connected Android device.
 To make a **release build**, run:
 
 ```sh
-fuse build --target=Android --configuration=Release
+uno build android --configuration=Release
 ```
 
 *Note:* to export your app to the Google Play Store, you need to [sign it first](../preview-and-export/signing.md).
@@ -125,15 +125,15 @@ fuse build --target=Android --configuration=Release
 In the project root, run the following command in your shell:
 
 ```sh
-fuse build --target=iOS --run
+uno build ios --run
 ```
 
-If you instead want to open the generated project in Xcode, run `fuse build --target=iOS -adebug`
+If you instead want to open the generated project in Xcode, run `uno build ios --debug`
 
 To make a **release build**, run:
 
 ```sh
-fuse build --target=iOS --configuration=Release
+uno build ios --configuration=Release
 ```
 
 *Note:* to export your app to the App Store, you need to [sign it first](../preview-and-export/signing.md).
