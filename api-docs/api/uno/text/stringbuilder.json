@@ -23,7 +23,7 @@
       "namespaceTitle": "Uno.Text",
       "namespaceUri": "uno/text",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "inheritance": {
       "root": {
@@ -111,12 +111,17 @@
         },
         "items": [
           {
+            "comment": {
+              "brief": "Creates a new StringBuilder",
+              "full": "Creates a new StringBuilder"
+            },
             "id": {
               "id": "uno/text/stringbuilder/_ctor",
               "parentId": "uno/text/stringbuilder",
               "type": "Constructor",
               "modifiers": [
-                "public"
+                "public",
+                "generated"
               ]
             },
             "uri": {
@@ -126,32 +131,6 @@
             "titles": {
               "indexTitle": "StringBuilder",
               "fullyQualifiedIndexTitle": "Uno.Text.StringBuilder.StringBuilder"
-            }
-          },
-          {
-            "parameters": [
-              {
-                "name": "value",
-                "href": "uno/string",
-                "title": "string",
-                "fullyQualifiedTitle": "string"
-              }
-            ],
-            "id": {
-              "id": "uno/text/stringbuilder/_ctor_968f99a6",
-              "parentId": "uno/text/stringbuilder",
-              "type": "Constructor",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "uno/text/stringbuilder/_ctor_968f99a6",
-              "href": "uno/text/stringbuilder/_ctor_968f99a6"
-            },
-            "titles": {
-              "indexTitle": "StringBuilder(string)",
-              "fullyQualifiedIndexTitle": "Uno.Text.StringBuilder.StringBuilder(string)"
             }
           }
         ]

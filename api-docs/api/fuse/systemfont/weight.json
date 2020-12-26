@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse",
       "namespaceUri": "fuse",
       "packageName": "Fuse.Common",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -78,7 +78,7 @@
       },
       {
         "uri": "fuse/systemfont/weight/semibold",
-        "title": "Semibold"
+        "title": "SemiBold"
       },
       {
         "uri": "fuse/systemfont/weight/bold",
@@ -91,10 +91,6 @@
       {
         "uri": "fuse/systemfont/weight/black",
         "title": "Black"
-      },
-      {
-        "uri": "fuse/systemfont/weight/semibold",
-        "title": "SemiBold"
       }
     ],
     "id": {
@@ -784,8 +780,8 @@
               "href": "fuse/systemfont/weight/semibold"
             },
             "titles": {
-              "indexTitle": "Semibold",
-              "fullyQualifiedIndexTitle": "Fuse.Weight.Semibold"
+              "indexTitle": "SemiBold",
+              "fullyQualifiedIndexTitle": "Fuse.Weight.SemiBold"
             }
           },
           {

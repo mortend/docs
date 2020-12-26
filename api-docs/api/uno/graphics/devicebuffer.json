@@ -23,7 +23,7 @@
       "namespaceTitle": "Uno.Graphics",
       "namespaceUri": "uno/graphics",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "inheritance": {
       "root": {
@@ -301,31 +301,13 @@
             "parameters": [
               {
                 "name": "data",
-                "href": "uno/array",
-                "title": "Array",
-                "fullyQualifiedTitle": "Uno.Array"
-              },
-              {
-                "name": "elementSize",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
-              },
-              {
-                "name": "index",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
-              },
-              {
-                "name": "count",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
+                "href": "uno/buffer",
+                "title": "Buffer",
+                "fullyQualifiedTitle": "Uno.Buffer"
               }
             ],
             "id": {
-              "id": "uno/graphics/devicebuffer/update_fd65466e",
+              "id": "uno/graphics/devicebuffer/update_396bdbfd",
               "parentId": "uno/graphics/devicebuffer",
               "type": "Method",
               "modifiers": [
@@ -333,12 +315,12 @@
               ]
             },
             "uri": {
-              "idUri": "uno/graphics/devicebuffer/update_fd65466e",
-              "href": "uno/graphics/devicebuffer/update_fd65466e"
+              "idUri": "uno/graphics/devicebuffer/update_396bdbfd",
+              "href": "uno/graphics/devicebuffer/update_396bdbfd"
             },
             "titles": {
-              "indexTitle": "Update(Array, int, int, int)",
-              "fullyQualifiedIndexTitle": "Uno.Graphics.DeviceBuffer.Update(Uno.Array, int, int, int)"
+              "indexTitle": "Update(Buffer)",
+              "fullyQualifiedIndexTitle": "Uno.Graphics.DeviceBuffer.Update(Uno.Buffer)"
             }
           },
           {

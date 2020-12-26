@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Platform",
       "namespaceUri": "fuse/platform",
       "packageName": "Fuse.Platform",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "id": {
       "id": "fuse/platform/interapp",
@@ -31,12 +31,7 @@
     },
     "comment": {
       "brief": "InterApp events.",
-      "full": "InterApp events.",
-      "attributes": {
-        "seeAlso": [
-          "Fuse.Reactive.FuseJS.InterApp"
-        ]
-      }
+      "full": "InterApp events."
     }
   },
   "tableOfContents": {

@@ -23,7 +23,7 @@
       "namespaceTitle": "Uno.Graphics",
       "namespaceUri": "uno/graphics",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "inheritance": {
       "root": {
@@ -114,6 +114,38 @@
           }
         },
         "items": [
+          {
+            "parameters": [
+              {
+                "name": "data",
+                "href": "uno/buffer",
+                "title": "Buffer",
+                "fullyQualifiedTitle": "Uno.Buffer"
+              },
+              {
+                "name": "usage",
+                "href": "uno/graphics/bufferusage",
+                "title": "BufferUsage",
+                "fullyQualifiedTitle": "Uno.Graphics.BufferUsage"
+              }
+            ],
+            "id": {
+              "id": "uno/graphics/vertexbuffer/_ctor_c01fcc93",
+              "parentId": "uno/graphics/vertexbuffer",
+              "type": "Constructor",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "uno/graphics/vertexbuffer/_ctor_c01fcc93",
+              "href": "uno/graphics/vertexbuffer/_ctor_c01fcc93"
+            },
+            "titles": {
+              "indexTitle": "VertexBuffer(Buffer, BufferUsage)",
+              "fullyQualifiedIndexTitle": "Uno.Graphics.VertexBuffer.VertexBuffer(Uno.Buffer, Uno.Graphics.BufferUsage)"
+            }
+          },
           {
             "parameters": [
               {
@@ -682,31 +714,13 @@
             "parameters": [
               {
                 "name": "data",
-                "href": "uno/array",
-                "title": "Array",
-                "fullyQualifiedTitle": "Uno.Array"
-              },
-              {
-                "name": "elementSize",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
-              },
-              {
-                "name": "index",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
-              },
-              {
-                "name": "count",
-                "href": "uno/int",
-                "title": "int",
-                "fullyQualifiedTitle": "int"
+                "href": "uno/buffer",
+                "title": "Buffer",
+                "fullyQualifiedTitle": "Uno.Buffer"
               }
             ],
             "id": {
-              "id": "uno/graphics/vertexbuffer/update_fd65466e",
+              "id": "uno/graphics/vertexbuffer/update_396bdbfd",
               "parentId": "uno/graphics/vertexbuffer",
               "type": "Method",
               "modifiers": [
@@ -714,13 +728,13 @@
               ]
             },
             "uri": {
-              "idUri": "uno/graphics/vertexbuffer/update_fd65466e",
-              "href": "uno/graphics/devicebuffer/update_fd65466e",
+              "idUri": "uno/graphics/vertexbuffer/update_396bdbfd",
+              "href": "uno/graphics/devicebuffer/update_396bdbfd",
               "isVirtual": true
             },
             "titles": {
-              "indexTitle": "Update(Array, int, int, int)",
-              "fullyQualifiedIndexTitle": "Uno.Graphics.DeviceBuffer.Update(Uno.Array, int, int, int)"
+              "indexTitle": "Update(Buffer)",
+              "fullyQualifiedIndexTitle": "Uno.Graphics.DeviceBuffer.Update(Uno.Buffer)"
             }
           },
           {

@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -497,6 +497,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class NavBar : Fuse.Controls.Container {}"
+    },
+    "comment": {
+      "brief": "A navigation bar including @StatusBarBackground.\nChildren are placed inside a DockPanel.",
+      "full": "A navigation bar including @StatusBarBackground.\nChildren are placed inside a DockPanel.\n\nUse [NavBarTitle](api:alive/navbartitle) for title text in a `NavBar`.\n\n    <DockPanel>\n        <Alive.NavBar>\n            <Alive.BackButton Dock=\"Left\" />\n            <Alive.NavBarTitle>Page</Alive.NavBarTitle>\n        </Alive.NavBar>\n    </DockPanel>"
     }
   },
   "tableOfContents": {

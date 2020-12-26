@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -512,6 +512,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class PartialTabPage : Alive.TabPage {}"
+    },
+    "comment": {
+      "brief": "A variant of [TabPage](api:alive/tabpage) that keeps the previous and next pages partially in view.",
+      "full": "A variant of [TabPage](api:alive/tabpage) that keeps the previous and next pages partially in view.\n\n**Note:* The enclosing @PageControl must have the\n[InactiveState](api:fuse/controls/pagecontrol/inactivestate) property set to\n[Unchanged](api:fuse/controls/navigationcontrolinactivestate/unchanged).\n[TabPageControl](api:alive/tabpagecontrol) does this automatically.\n\nSee [TabPage](api:alive/tabpage) for usage."
     }
   },
   "tableOfContents": {

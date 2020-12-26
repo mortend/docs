@@ -97,24 +97,6 @@
           },
           {
             "id": {
-              "id": "fuse/platform/screenorientation",
-              "parentId": "fuse/platform",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/platform/screenorientation",
-              "href": "fuse/platform/screenorientation"
-            },
-            "titles": {
-              "indexTitle": "ScreenOrientation",
-              "fullyQualifiedIndexTitle": "Fuse.Platform.ScreenOrientation"
-            }
-          },
-          {
-            "id": {
               "id": "fuse/platform/statusbaranimation",
               "parentId": "fuse/platform",
               "type": "Enum",

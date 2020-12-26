@@ -96,6 +96,10 @@
       }
     },
     {
+      "comment": {
+        "brief": "Animation that progresses as a [StickyHeader](api:alive/stickyheader) begins sticking,\nwithin to a given distance.",
+        "full": "Animation that progresses as a [StickyHeader](api:alive/stickyheader) begins sticking,\nwithin to a given distance.\n\nNot to be confused with [StickyHeaderAnimation](api:alive/stickyheaderanimation).\n\nThe `Distance` property determines the distance from where the header starts sticking that must be scrolled,\nfor the animation to progress from start to finish.\n\n    <ScrollView>\n        <StackPanel>\n            <Alive.StickyHeader>\n                <Panel ux:Binding=\"Header\" Height=\"60\" Color=\"{Resource Alive.AccentColor}\">\n                    <Shadow ux:Name=\"shadow\" Size=\"0\" />\n                </Panel>\n                <Alive.StickingAnimation Distance=\"60\">\n                    <Change shadow.Size=\"1\" />\n                </Alive.StickingAnimation>\n            </Alive.StickyHeader>\n        </StackPanel>\n    </ScrollView>"
+      },
       "id": {
         "id": "alive/stickyheaderanimation",
         "parentId": "alive",
@@ -289,7 +293,10 @@
     {
       "comment": {
         "brief": "Iterator for visual plot data.",
-        "full": "Iterator for visual plot data.\n\nThis works like an @Each for the visible data points. Use a @PlotBar or  @PlotCurvePoint to add elements matching this data. Or use a `{Plot data.*}` to get at the variables for the data point.\n\n    <Panel>\n        <c:PlotData>\n            <c:PlotBar/>\n        </c:PlotData>\n    </Panel>\n\n    <Curve>\n        <c:PlotData>\n            <c:PlotCurvePoint/>\n        </c:PlotData>\n    </Curve>"
+        "full": "Iterator for visual plot data.\n\nThis works like an @Each for the visible data points. Use a @PlotBar or  @PlotCurvePoint to add elements matching this data. Or use a `{Plot data.*}` to get at the variables for the data point.\n\n    <Panel>\n        <c:PlotData>\n            <c:PlotBar/>\n        </c:PlotData>\n    </Panel>\n\n    <Curve>\n        <c:PlotData>\n            <c:PlotCurvePoint/>\n        </c:PlotData>\n    </Curve>",
+        "attributes": {
+          "experimental": true
+        }
       },
       "id": {
         "id": "fuse/charting/plotdata",
@@ -674,28 +681,6 @@
     },
     {
       "comment": {
-        "brief": "Applies a glass backdrop effect to an @Element.",
-        "full": "Applies a glass backdrop effect to an @Element.\n\nThe following example displays a glass effect.\n\n<ClientPanel>\n    <Panel Width=\"150\" Height=\"70\" Alignment=\"Center\">\n        <Glass Radius=\"10\" />\n    </Panel>\n    <Image ux:Name=\"image\" Alignment=\"Center\" Margin=\"20\" Background=\"Purple\" Url=\"https://fuseopen.com/assets/white-logo.png\" />\n</ClientPanel>\n\nWe need to set the `Background` property of the `Glass` behavior to the Element that will act as a background so it will get blurred out.\nIf we don't set it, The `Glass` behavior will try to find the background from the sibling element where `Glass` behavior is attached"
-      },
-      "id": {
-        "id": "fuse/effects/glass",
-        "parentId": "fuse/effects",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/effects/glass",
-        "href": "fuse/effects/glass"
-      },
-      "titles": {
-        "indexTitle": "Glass",
-        "fullyQualifiedIndexTitle": "Fuse.Effects.Glass"
-      }
-    },
-    {
-      "comment": {
         "brief": "Helper class for implementing circular @(RangeControl:RangeControls)",
         "full": "Helper class for implementing circular @(RangeControl:RangeControls)\n\nUsed to enable circual touch input on @RangeControl.\nTypically used when implementing circular range pickers,\nlike a clock timepicker or dials.\n\n## Example\n\n### Andgle-based circular range control\nThe following example shows a simple circular @(RangeControl) implemented using `CircularRangeBehavior`, where a visual is rotated as the @(RangeControl) is changed. The range is calculated from the angle between the mouse and the X-axis\n\n    <RangeControl Width=\"180\" Height=\"180\" Margin=\"2\">\n        <CircularRangeBehavior />\n        <Panel ux:Name=\"thumb\" Margin=\"4\">\n            <Rectangle Color=\"#fff\" Alignment=\"Right\" Height=\"18\" Width=\"48\" CornerRadius=\"4\" />\n        </Panel>\n        <ProgressAnimation>\n            <Rotate Target=\"thumb\" Degrees=\"360\" />\n        </ProgressAnimation>\n        <Circle Color=\"#aaa\" />\n    </RangeControl>\n\n### Angle and radius based circular range control\nWhen used with a @(RangeControl2D), you can get both the angle progress, and the radius progress. This effectively means that your range control allows the user to control two ranges at once.\n\n    <RangeControl2D Width=\"180\" Height=\"180\" Margin=\"2\" ux:Name=\"rangeControl\">\n        <CircularRangeBehavior/>\n        <Panel ux:Name=\"thumb\" Margin=\"4\">\n            <Rectangle Color=\"#fff\" Alignment=\"Right\" Height=\"18\" Width=\"48\" CornerRadius=\"4\" />\n        </Panel>\n        <RangeAnimation Minimum=\"0\" Maximum=\"100\" Value=\"{ReadProperty rangeControl.ValueX}\">\n            <Rotate Target=\"thumb\" Degrees=\"360\" />\n        </RangeAnimation>\n        <RangeAnimation Minimum=\"0\" Maximum=\"100\" Value=\"{ReadProperty rangeControl.ValueY}\">\n            <Change radiusCircle.Factor=\"1\" />\n        </RangeAnimation>\n        <Circle Color=\"#0FF\" Alignment=\"Center\" Width=\"180\" Height=\"180\">\n            <Scaling ux:Name=\"radiusCircle\" Factor=\"0\" />\n        </Circle>\n        <Circle Color=\"#aaa\" />\n    </RangeControl2D>"
       },
@@ -821,28 +806,6 @@
       "titles": {
         "indexTitle": "EdgeSwipeAnimation",
         "fullyQualifiedIndexTitle": "Fuse.Gestures.EdgeSwipeAnimation"
-      }
-    },
-    {
-      "comment": {
-        "brief": "Triggers when a pointer is pressed on a @Visual.",
-        "full": "Triggers when a pointer is pressed on a @Visual.\n\nThe `HoldPress` trigger is a repeating trigger that will continue to pulse as long as a @Visual is being held.\n\n# Example\nIn this example, a panel will scale and call a JS callback `pressed` for every 0.2 seconds, when pressed:\n\n    <Panel Background=\"#F00\">\n        <HoldPress First=\"true\" Handler=\"{pressed}\" Delay=\"0.5\" Repeat=\"0.2\">\n            <Scale Target=\"rect\" Vector=\"1.2\" Duration=\"0.2\" />\n        </HoldPress>\n    </Panel>"
-      },
-      "id": {
-        "id": "fuse/gestures/holdpress",
-        "parentId": "fuse/gestures",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/gestures/holdpress",
-        "href": "fuse/gestures/holdpress"
-      },
-      "titles": {
-        "indexTitle": "HoldPress",
-        "fullyQualifiedIndexTitle": "Fuse.Gestures.HoldPress"
       }
     },
     {
@@ -2018,28 +1981,6 @@
       }
     },
     {
-      "comment": {
-        "brief": "a Trigger that pulse when drag has been ended by Draggable Element",
-        "full": "a Trigger that pulse when drag has been ended by Draggable Element"
-      },
-      "id": {
-        "id": "fuse/physics/dragended",
-        "parentId": "fuse/physics",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/dragended",
-        "href": "fuse/physics/dragended"
-      },
-      "titles": {
-        "indexTitle": "DragEnded",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DragEnded"
-      }
-    },
-    {
       "id": {
         "id": "fuse/physics/draggable",
         "parentId": "fuse/physics",
@@ -2055,91 +1996,6 @@
       "titles": {
         "indexTitle": "Draggable",
         "fullyQualifiedIndexTitle": "Fuse.Physics.Draggable"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/physics/draggableeventtrigger",
-        "parentId": "fuse/physics",
-        "type": "Class",
-        "modifiers": [
-          "public",
-          "abstract"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/draggableeventtrigger",
-        "href": "fuse/physics/draggableeventtrigger"
-      },
-      "titles": {
-        "indexTitle": "DraggableEventTrigger",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DraggableEventTrigger"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/physics/draggabletrigger",
-        "parentId": "fuse/physics",
-        "type": "Class",
-        "modifiers": [
-          "public",
-          "abstract"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/draggabletrigger",
-        "href": "fuse/physics/draggabletrigger"
-      },
-      "titles": {
-        "indexTitle": "DraggableTrigger",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DraggableTrigger"
-      }
-    },
-    {
-      "comment": {
-        "brief": "a Trigger that pulse when drag has been started by Draggable Element",
-        "full": "a Trigger that pulse when drag has been started by Draggable Element"
-      },
-      "id": {
-        "id": "fuse/physics/dragstarted",
-        "parentId": "fuse/physics",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/dragstarted",
-        "href": "fuse/physics/dragstarted"
-      },
-      "titles": {
-        "indexTitle": "DragStarted",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DragStarted"
-      }
-    },
-    {
-      "comment": {
-        "brief": "a Trigger that pulse when draggable element has been dropped to the target or target element has received draggable element",
-        "full": "a Trigger that pulse when draggable element has been dropped to the target or target element has received draggable element",
-        "attributes": {
-          "experimental": true
-        }
-      },
-      "id": {
-        "id": "fuse/physics/dropped",
-        "parentId": "fuse/physics",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/dropped",
-        "href": "fuse/physics/dropped"
-      },
-      "titles": {
-        "indexTitle": "Dropped",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.Dropped"
       }
     },
     {
@@ -2321,56 +2177,6 @@
       "titles": {
         "indexTitle": "WhileDragging",
         "fullyQualifiedIndexTitle": "Fuse.Physics.WhileDragging"
-      }
-    },
-    {
-      "comment": {
-        "brief": "a Trigger that activate when Draggable Element is intersected with the `Target` element",
-        "full": "a Trigger that activate when Draggable Element is intersected with the `Target` element\n\n#Example:\n\n```\n<App>\n    <JavaScript>\n        var Observable = require(\"FuseJS/Observable\");\n        var dataToTransfer = new Observable(\"Data to transfer\");\n        module.exports = { dataToTransfer, dataReceived: function (args) { console.dir(args.data); } }\n    </JavaScript>\n    <ClientPanel>\n        <Panel ux:Name=\"source\" X=\"40\" Y=\"80\" Size=\"80\">\n            <Rectangle Layer=\"Background\" Color=\"#afa\" ux:Name=\"bg\" />\n            <Draggable />\n            <Shadow Distance=\"0\" Size=\"0\" ux:Name=\"shadow\" />\n            <WhilePressed>\n                <Scale Vector=\"1.2\" Duration=\"0.2\" />\n                <Change shadow.Size=\"5\" Duration=\"0.2\" />\n                <Change shadow.Distance=\"3\" Duration=\"0.2\" />\n                <Change shadow.Color=\"#666\" Duration=\"0.1\" />\n            </WhilePressed>\n            <WhileDragging>\n                <Change shadow.Size=\"10\" Duration=\"0.1\" />\n                <Change shadow.Distance=\"6\" Duration=\"0.1\" />\n                <Change shadow.Color=\"#333\" Duration=\"0.1\" />\n            </WhileDragging>\n            <WhileDraggingOver Target=\"dropPanel\">\n                <Change bg.Color=\"#0f0\" />\n                <Change bg.StrokeWidth=\"2\" Duration=\"0.2\" />\n                <Change bg.StrokeColor=\"#f00\" Duration=\"0.2\" />\n            </WhileDraggingOver>\n            <Dropped To=\"dropPanel\" Data=\"{dataToTransfer}\">\n                <Set source.Size=\"50\" />\n            </Dropped>\n        </Panel>\n\n        <Panel Size=\"80\" X=\"80\" Y=\"500\" Color=\"#ccc\" ux:Name=\"dropPanel\">\n            <WhileDroppingBy Source=\"source\">\n                <Change dropPanel.Color=\"#0ff\" Duration=\"0.2\" />\n            </WhileDroppingBy>\n            <Dropped By=\"source\" Handler=\"{dataReceived}\">\n                <Scale Vector=\"1.2\" Duration=\"0.2\" />\n            </Dropped>\n        </Panel>\n    </ClientPanel>\n</App>\n```",
-        "attributes": {
-          "experimental": true
-        }
-      },
-      "id": {
-        "id": "fuse/physics/whiledraggingover",
-        "parentId": "fuse/physics",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/whiledraggingover",
-        "href": "fuse/physics/whiledraggingover"
-      },
-      "titles": {
-        "indexTitle": "WhileDraggingOver",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.WhileDraggingOver"
-      }
-    },
-    {
-      "comment": {
-        "brief": "a Trigger that activate when the element that has `WhileDroppedBy` trigger is intersected with `Source` element (Draggable Element)",
-        "full": "a Trigger that activate when the element that has `WhileDroppedBy` trigger is intersected with `Source` element (Draggable Element)\n\n#Example:\n\n```\n<App>\n    <JavaScript>\n        var Observable = require(\"FuseJS/Observable\");\n        var dataToTransfer = new Observable(\"Data to transfer\");\n        module.exports = { dataToTransfer, dataReceived: function (args) { console.dir(args.data); } }\n    </JavaScript>\n    <ClientPanel>\n        <Panel ux:Name=\"source\" X=\"40\" Y=\"80\" Size=\"80\">\n            <Rectangle Layer=\"Background\" Color=\"#afa\" ux:Name=\"bg\" />\n            <Draggable />\n            <Shadow Distance=\"0\" Size=\"0\" ux:Name=\"shadow\" />\n            <WhilePressed>\n                <Scale Vector=\"1.2\" Duration=\"0.2\" />\n                <Change shadow.Size=\"5\" Duration=\"0.2\" />\n                <Change shadow.Distance=\"3\" Duration=\"0.2\" />\n                <Change shadow.Color=\"#666\" Duration=\"0.1\" />\n            </WhilePressed>\n            <WhileDragging>\n                <Change shadow.Size=\"10\" Duration=\"0.1\" />\n                <Change shadow.Distance=\"6\" Duration=\"0.1\" />\n                <Change shadow.Color=\"#333\" Duration=\"0.1\" />\n            </WhileDragging>\n            <WhileDraggingOver Target=\"dropPanel\">\n                <Change bg.Color=\"#0f0\" />\n                <Change bg.StrokeWidth=\"2\" Duration=\"0.2\" />\n                <Change bg.StrokeColor=\"#f00\" Duration=\"0.2\" />\n            </WhileDraggingOver>\n            <Dropped To=\"dropPanel\" Data=\"{dataToTransfer}\">\n                <Set source.Size=\"50\" />\n            </Dropped>\n        </Panel>\n\n        <Panel Size=\"80\" X=\"80\" Y=\"500\" Color=\"#ccc\" ux:Name=\"dropPanel\">\n            <WhileDroppingBy Source=\"source\">\n                <Change dropPanel.Color=\"#0ff\" Duration=\"0.2\" />\n            </WhileDroppingBy>\n            <Dropped By=\"source\" Handler=\"{dataReceived}\">\n                <Scale Vector=\"1.2\" Duration=\"0.2\" />\n            </Dropped>\n        </Panel>\n    </ClientPanel>\n</App>",
-        "attributes": {
-          "experimental": true
-        }
-      },
-      "id": {
-        "id": "fuse/physics/whiledroppingby",
-        "parentId": "fuse/physics",
-        "type": "UxClass",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/whiledroppingby",
-        "href": "fuse/physics/whiledroppingby"
-      },
-      "titles": {
-        "indexTitle": "WhileDroppingBy",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.WhileDroppingBy"
       }
     },
     {
@@ -3694,7 +3500,7 @@
     {
       "comment": {
         "brief": "Controls the animations for page-to-page transitions in a `Navigator`.",
-        "full": "Controls the animations for page-to-page transitions in a `Navigator`.\n\nUnlike the `EnteringAnimation` and `ExitingAnimation` triggers, `Transition` allows you to make different animations depending on which page is being navigating to, or away from.\n\n# Example\n\n\t<Page ux:Template=\"Main\">\n\t\t<Transition To=\"Contacts\">\n\t\t\t<Move X=\"-1\" RelativeTo=\"ParentSize\" Duration=\"1\"/>\n\t\t</Transition>\n\t\t<Transition>\n\t\t\t<Move Y=\"1\" RelativeTo=\"ParentSize\" Duration=\"1\"/>\n\t\t</Transition>\n\t</Page>\n\t\nThis page has a special transition if navigating to the `Contacts` page. In this case it will slide the page to the left. All other transitions away from this page will slide down.\n\n# To / From\n\nEvery navigation change defines a \"To\" and \"From\" page. In `Transition` these are always defined as the the forward ordering of the pages in the navigation. This ensures that when navigating backward (such as using `goBack`) the same transitions will be used, but done in reverse.\n\nFor example, a `<Transition To=\"Contacts\">` matches a forward transition to the `Contacts` page, as well as a backwards transition from the `Contacts` page to this one.\n\nSimilarly, a `<Transtion From=\"Main\">` matches a forward transition from the `Main` page, as well as a backwards transition from this page to the `Main` page.\n\n# Priority\n\nOnly one `Transition`, the one with the highest priority, will be selected for each page change. The priority ordering is:\n\n- A `Style` match on the operational style\n- `Interaction` match other than `Any`\n- `To` page name match\n- `From` page name match\n- `Direction` of `ToBack`, `FromBack`, `ToFront`, `FromFront`\n- `Direction` of `ToActive`, `ToInactive`\n- `Direction` of `InFront`, `Behind`\n- `Direction` `Any`\n\nIf no matching `Transition` is found then a default one will be created according to the [Navigator.Transition](api:fuse/controls/navigationcontrol/transition) property. If you don't want a default then specify a final fallback transition without properties `<Transition>`.\n\n# Play direction\n\nIf the page is becoming inactive the transition will be played forward. If the page is becoming active the transition will be played backward. This means the transition is always defining the animation towards the inactive state.\n\nWith certain combinations of properties this may at first seem odd, for example:\n\n\t<Transition Direction=\"ToActive\">\n\t\t<Move X=\"100\" Duration=\"1\"/>\n\t</Transition>\n\t\nThis `Transition` is only selected when the page is becoming the active one. The animation will start at `X=100` and move towards `X=0` over a duration of `1`.\n\nThe final state of any active page is always with all transitions deactivated.\n\n\r\n\n## Extended Example\n\nThe [Transition Example](https://github.com/fusetools/fuse-samples/tree/master/Samples/UIStructure/Transition) shows a variety of page transitions using `Transition`."
+        "full": "Controls the animations for page-to-page transitions in a `Navigator`.\n\nUnlike the `EnteringAnimation` and `ExitingAnimation` triggers, `Transition` allows you to make different animations depending on which page is being navigating to, or away from.\n\n# Example\n\n\t<Page ux:Template=\"Main\">\n\t\t<Transition To=\"Contacts\">\n\t\t\t<Move X=\"-1\" RelativeTo=\"ParentSize\" Duration=\"1\"/>\n\t\t</Transition>\n\t\t<Transition>\n\t\t\t<Move Y=\"1\" RelativeTo=\"ParentSize\" Duration=\"1\"/>\n\t\t</Transition>\n\t</Page>\n\t\nThis page has a special transition if navigating to the `Contacts` page. In this case it will slide the page to the left. All other transitions away from this page will slide down.\n\n# To / From\n\nEvery navigation change defines a \"To\" and \"From\" page. In `Transition` these are always defined as the the forward ordering of the pages in the navigation. This ensures that when navigating backward (such as using `goBack`) the same transitions will be used, but done in reverse.\n\nFor example, a `<Transition To=\"Contacts\">` matches a forward transition to the `Contacts` page, as well as a backwards transition from the `Contacts` page to this one.\n\nSimilarly, a `<Transtion From=\"Main\">` matches a forward transition from the `Main` page, as well as a backwards transition from this page to the `Main` page.\n\n# Priority\n\nOnly one `Transition`, the one with the highest priority, will be selected for each page change. The priority ordering is:\n\n- A `Style` match on the operational style\n- `Interaction` match other than `Any`\n- `To` page name match\n- `From` page name match\n- `Direction` of `ToBack`, `FromBack`, `ToFront`, `FromFront`\n- `Direction` of `ToActive`, `ToInactive`\n- `Direction` of `InFront`, `Behind`\n- `Direction` `Any`\n\nIf no matching `Transition` is found then a default one will be created according to the [Navigator.Transition](api:fuse/controls/navigationcontrol/transition) property. If you don't want a default then specify a final fallback transition without properties `<Transition>`.\n\n# Play direction\n\nIf the page is becoming inactive the transition will be played forward. If the page is becoming active the transition will be played backward. This means the transition is always defining the animation towards the inactive state.\n\nWith certain combinations of properties this may at first seem odd, for example:\n\n\t<Transition Direction=\"ToActive\">\n\t\t<Move X=\"100\" Duration=\"1\"/>\n\t</Transition>\n\t\nThis `Transition` is only selected when the page is becoming the active one. The animation will start at `X=100` and move towards `X=0` over a duration of `1`.\n\nThe final state of any active page is always with all transitions deactivated.\n\n## Extended Example\n\nThe [Transition Example](https://github.com/fusetools/fuse-samples/tree/master/Samples/UIStructure/Transition) shows a variety of page transitions using `Transition`."
       },
       "id": {
         "id": "fuse/triggers/transition",

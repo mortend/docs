@@ -338,25 +338,6 @@
     },
     {
       "id": {
-        "id": "fuse/reactive/length",
-        "parentId": "fuse/reactive",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/reactive/length",
-        "href": "fuse/reactive/length"
-      },
-      "titles": {
-        "indexTitle": "Length",
-        "fullyQualifiedIndexTitle": "Fuse.Reactive.Length"
-      }
-    },
-    {
-      "id": {
         "id": "fuse/reactive/log",
         "parentId": "fuse/reactive",
         "type": "UxClass",
@@ -704,25 +685,6 @@
       "titles": {
         "indexTitle": "ToUpper",
         "fullyQualifiedIndexTitle": "Fuse.Reactive.ToUpper"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/reactive/trim",
-        "parentId": "fuse/reactive",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/reactive/trim",
-        "href": "fuse/reactive/trim"
-      },
-      "titles": {
-        "indexTitle": "Trim",
-        "fullyQualifiedIndexTitle": "Fuse.Reactive.Trim"
       }
     },
     {

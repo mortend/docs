@@ -339,24 +339,6 @@
             }
           },
           {
-            "id": {
-              "id": "fuse/controls/coordinate",
-              "parentId": "fuse/controls",
-              "type": "UxClass",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/coordinate",
-              "href": "fuse/controls/coordinate"
-            },
-            "titles": {
-              "indexTitle": "Coordinate",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.Coordinate"
-            }
-          },
-          {
             "comment": {
               "brief": "Draws a curve connecting several points, specified as @CurvePoint.",
               "full": "Draws a curve connecting several points, specified as @CurvePoint.\n\nThe points of the curve are relative to the size of the `Curve`; the values have the range `0..1`.\n\n## Example\n\n    Draws a simple line graph.\n\n    <Panel Alignment=\"Center\" Width=\"300\" Height=\"200\">\n        <Curve StrokeWidth=\"10\" StrokeColor=\"#ABC\">\n            <CurvePoint At=\"0.00,0.0\"/>\n            <CurvePoint At=\"0.25,0.4\"/>\n            <CurvePoint At=\"0.50,0.1\"/>\n            <CurvePoint At=\"0.75,0.9\"/>\n            <CurvePoint At=\"1.00,0.6\"/>\n        </Curve>\n    </Panel>"
@@ -650,30 +632,8 @@
           },
           {
             "comment": {
-              "brief": "Adds a map overlay to a @MapView",
-              "full": "Adds a map overlay to a @MapView\n\nTo overlay the map, you must decorate it with `MapOverlay` nodes. There are three type of overlay that supported Polyline, Polygon and Circle.\nIn order to draw Overlay, it needs to define position where overlay should be drawn on the map using `Coordinate` property. See the example below on how you can create map overlay\n\n```HTML\n<NativeViewHost>\n    <MapView Zoom=\"14\" Latitude=\"-6.914742\" Longitude=\"107.609820\">\n        <MapOverlay Type=\"Polyline\" StrokeColor=\"Blue\" LineWidth=\"5\">\n            <Coordinate Latitude=\"-6.914742\" Longitude=\"107.609820\" />\n            <Coordinate Latitude=\"-6.915850\" Longitude=\"107.609929\" />\n            <Coordinate Latitude=\"-6.916959\" Longitude=\"107.611009\" />\n        </MapOverlay>\n    </MapView>\n</NativeViewHost>\n```"
-            },
-            "id": {
-              "id": "fuse/controls/mapoverlay",
-              "parentId": "fuse/controls",
-              "type": "UxClass",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/mapoverlay",
-              "href": "fuse/controls/mapoverlay"
-            },
-            "titles": {
-              "indexTitle": "MapOverlay",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.MapOverlay"
-            }
-          },
-          {
-            "comment": {
               "brief": "Displays a native map view.",
-              "full": "Displays a native map view.\n\nThe `MapView` allows you to present annotated, interactive world-wide maps to the user using the mapping APIs native to the platform: Google Maps on Android and Apple Maps on iOS.\n\nThe `MapView` is a native control, and thus needs to be contained in a @NativeViewHost to be displayed. As with other native mobile controls, there currently isn't a `MapView` available for desktop targets.\n\n*Note:* You need to add a reference to `Fuse.Maps` in the `Packages` section of your `.unoproj`:\n\n```\n\"Packages\": [\n\t\"Fuse.Maps\",\n\t\"Fuse\",\n\t\"FuseJS\"\n]\n```\n\nGetting a `MapView` included in your app is straight forward: Simply include the node in your UX as you normally would with a native control:\n\n```XML\n<NativeViewHost>\n\t<MapView/>\n</NativeViewHost>\n```\n\nTo initialize and manipulate the map camera, use the [Latitude](api:fuse/controls/mapview/latitude), [Longitude](api:fuse/controls/mapview/longitude), [Zoom](api:fuse/controls/mapview/zoom), [Tilt](api:fuse/controls/mapview/tilt) and [Bearing](api:fuse/controls/mapview/bearing) properties, all of which are two-way bindable.\n`Zoom` follows Google's \"zoom levels\", which can be read about in detail [here](https://developers.google.com/maps/documentation/static-maps/intro#Zoomlevels).\n\nThe map can be further customized by setting the rendering style using the [Style](api:fuse/controls/mapview/style) property.\nOptions are `Normal`, `Satellite` and `Hybrid`.\n\nTo annotate the map with labelled markers, see @MapMarker\n\n## Maps on Android\n\nGoogle Maps requires a valid Google Maps API key. Follow [Google's documentation](https://developers.google.com/maps/documentation/android-api/signup) to get one set up. Once you have your key it must be added to your project file, as shown below\n\n```JSON\n\"Android\": {\n   \"Geo\": {\n        \"ApiKey\": \"your_key_here\"\n    }\n}\n```\n\r\nThis example displays a map with an average zoom level focused on Fuse's home in Oslo, Norway"
+              "full": "Displays a native map view.\n\nThe `MapView` allows you to present annotated, interactive world-wide maps to the user using the mapping APIs native to the platform: Google Maps on Android and Apple Maps on iOS.\n\nThe `MapView` is a native control, and thus needs to be contained in a @NativeViewHost to be displayed. As with other native mobile controls, there currently isn't a `MapView` available for desktop targets.\n\n*Note:* You need to add a reference to `Fuse.Maps` in the `Packages` section of your `.unoproj`:\n\n```\n\"Packages\": [\n\t\"Fuse.Maps\",\n\t\"Fuse\",\n\t\"FuseJS\"\n]\n```\n\nGetting a `MapView` included in your app is straight forward: Simply include the node in your UX as you normally would with a native control:\n\n```XML\n<NativeViewHost>\n\t<MapView/>\n</NativeViewHost>\n```\n\nTo initialize and manipulate the map camera, use the [Latitude](api:fuse/controls/mapview/latitude), [Longitude](api:fuse/controls/mapview/longitude), [Zoom](api:fuse/controls/mapview/zoom), [Tilt](api:fuse/controls/mapview/tilt) and [Bearing](api:fuse/controls/mapview/bearing) properties, all of which are two-way bindable.\n`Zoom` follows Google's \"zoom levels\", which can be read about in detail [here](https://developers.google.com/maps/documentation/static-maps/intro#Zoomlevels).\n\nThe map can be further customized by setting the rendering style using the [Style](api:fuse/controls/mapview/style) property.\nOptions are `Normal`, `Satellite` and `Hybrid`.\n\nTo annotate the map with labelled markers, see @MapMarker\n\n## Maps on Android\n\nGoogle Maps requires a valid Google Maps API key. Follow [Google's documentation](https://developers.google.com/maps/documentation/android-api/signup) to get one set up. Once you have your key it must be added to your project file, as shown below\n\n```JSON\n\"Android\": {\n   \"Geo\": {\n        \"ApiKey\": \"your_key_here\"\n    }\n}\n```\n\nThis example displays a map with an average zoom level focused on Fuse's home in Oslo, Norway"
             },
             "id": {
               "id": "fuse/controls/mapview",
@@ -1492,7 +1452,7 @@
           {
             "comment": {
               "brief": "Displays a block of text.",
-              "full": "Displays a block of text.\n\nThe `Text` UI-control renders read-only text.\n\nYou can import a @Font from ttf files containing TrueType fonts. Because a font is typically referred to throughout an application, it is best to simply create a global resource for it using `ux:Global`. This way of importing the font ensures that the font is available throughout the whole project, and is only loaded once.\n\n> **Note**\n>\n> When running desktop preview, neither fallback fonts, colored glyphs, nor Unicode characters outside the basic multilingual plane are supported.\n>\n> Because of this, **certain text features (e.g. emoji) are not supported when running local preview.**\n> Do not be surprised if desktop rendering doesn't match device rendering 100%. This is an issue that is being worked on.\r\n\n# Examples \n\n## Text properties\n\n```\n<Text Color=\"#999\">Left</Text>\n<Text TextAlignment=\"Center\">Center</Text>\n<Text FontSize=\"24\" TextAlignment=\"Right\">Right</Text>\n<Text LineSpacing=\"10\">\nMultiple\nLines\n</Text>\n```\n\nIn this example, the first text element will be left aligned as this is the default, and have its color set to a medium light grey. The second text will be center aligned. The third will be right aligned and have a larger font. The fourth will span two lines with 10 points of space inbetween.\n\n## Custom text-components\n\n\t<App>\n\t\t<Font File=\"Roboto-Medium.ttf\" ux:Global=\"Medium\" />\n\t\t<Font File=\"Roboto-Light.ttf\" ux:Global=\"Light\" />\n\n\t\t<Text ux:Class=\"Light\" Font=\"Light\" />\n\t\t<Text ux:Class=\"Medium\" Font=\"Medium\" TextWrapping=\"Wrap\" />\n\t\t<Text ux:Class=\"Warning\" \n\t\t\tFont=\"Medium\" \n\t\t\tFontSize=\"42\"\n\t\t\tTextAlignment=\"Center\"\n\t\t\tColor=\"#f00\" />\n\t\t\t\n\t\t<StackPanel>\n\t\t\t<Light>Just some text</Light>\n\t\t\t<Warning>The robots are coming!</Warning>\n\t\t\t<Medium>This is just some medium text, but it will happily wrap when the edges of the screen is reached.</Medium>\n\t\t</StackPanel>\n\t</App>\n\nIn this example we load two fonts and create three different semantic classes, `Light`, `Medium` and `Warning`, combining some of the available `Text` properties. In this example, the fonts are located in the same directory as the relevant UX file. \r\n\n# Remarks\n\n`Text` is the primary control for displaying read-only text in apps."
+              "full": "Displays a block of text.\n\nThe `Text` UI-control renders read-only text.\n\nYou can import a @Font from ttf files containing TrueType fonts. Because a font is typically referred to throughout an application, it is best to simply create a global resource for it using `ux:Global`. This way of importing the font ensures that the font is available throughout the whole project, and is only loaded once.\n\n> **Note**\n>\n> When running desktop preview, neither fallback fonts, colored glyphs, nor Unicode characters outside the basic multilingual plane are supported.\n>\n> Because of this, **certain text features (e.g. emoji) are not supported when running local preview.**\n> Do not be surprised if desktop rendering doesn't match device rendering 100%. This is an issue that is being worked on.\n\n# Examples \n\n## Text properties\n\n```\n<Text Color=\"#999\">Left</Text>\n<Text TextAlignment=\"Center\">Center</Text>\n<Text FontSize=\"24\" TextAlignment=\"Right\">Right</Text>\n<Text LineSpacing=\"10\">\nMultiple\nLines\n</Text>\n```\n\nIn this example, the first text element will be left aligned as this is the default, and have its color set to a medium light grey. The second text will be center aligned. The third will be right aligned and have a larger font. The fourth will span two lines with 10 points of space inbetween.\n\n## Custom text-components\n\n\t<App>\n\t\t<Font File=\"Roboto-Medium.ttf\" ux:Global=\"Medium\" />\n\t\t<Font File=\"Roboto-Light.ttf\" ux:Global=\"Light\" />\n\n\t\t<Text ux:Class=\"Light\" Font=\"Light\" />\n\t\t<Text ux:Class=\"Medium\" Font=\"Medium\" TextWrapping=\"Wrap\" />\n\t\t<Text ux:Class=\"Warning\" \n\t\t\tFont=\"Medium\" \n\t\t\tFontSize=\"42\"\n\t\t\tTextAlignment=\"Center\"\n\t\t\tColor=\"#f00\" />\n\t\t\t\n\t\t<StackPanel>\n\t\t\t<Light>Just some text</Light>\n\t\t\t<Warning>The robots are coming!</Warning>\n\t\t\t<Medium>This is just some medium text, but it will happily wrap when the edges of the screen is reached.</Medium>\n\t\t</StackPanel>\n\t</App>\n\nIn this example we load two fonts and create three different semantic classes, `Light`, `Medium` and `Warning`, combining some of the available `Text` properties. In this example, the fonts are located in the same directory as the relevant UX file. \n\n# Remarks\n\n`Text` is the primary control for displaying read-only text in apps."
             },
             "id": {
               "id": "fuse/controls/text",
@@ -2651,28 +2611,6 @@
           },
           {
             "comment": {
-              "brief": "Available DatePicker style",
-              "full": "Available DatePicker style"
-            },
-            "id": {
-              "id": "fuse/controls/datepickerstyle",
-              "parentId": "fuse/controls",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/datepickerstyle",
-              "href": "fuse/controls/datepickerstyle"
-            },
-            "titles": {
-              "indexTitle": "DatePickerStyle",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.DatePickerStyle"
-            }
-          },
-          {
-            "comment": {
               "brief": "Determines how the bounds of a path are calculated for fitting into an element.",
               "full": "Determines how the bounds of a path are calculated for fitting into an element."
             },
@@ -2709,42 +2647,6 @@
             "titles": {
               "indexTitle": "FlashMode",
               "fullyQualifiedIndexTitle": "Fuse.Controls.FlashMode"
-            }
-          },
-          {
-            "id": {
-              "id": "fuse/controls/linecap",
-              "parentId": "fuse/controls",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/linecap",
-              "href": "fuse/controls/linecap"
-            },
-            "titles": {
-              "indexTitle": "LineCap",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.LineCap"
-            }
-          },
-          {
-            "id": {
-              "id": "fuse/controls/linejoin",
-              "parentId": "fuse/controls",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/linejoin",
-              "href": "fuse/controls/linejoin"
-            },
-            "titles": {
-              "indexTitle": "LineJoin",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.LineJoin"
             }
           },
           {
@@ -2901,24 +2803,6 @@
             "titles": {
               "indexTitle": "NavigatorSwipeHow",
               "fullyQualifiedIndexTitle": "Fuse.Controls.NavigatorSwipeHow"
-            }
-          },
-          {
-            "id": {
-              "id": "fuse/controls/overlaytype",
-              "parentId": "fuse/controls",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/overlaytype",
-              "href": "fuse/controls/overlaytype"
-            },
-            "titles": {
-              "indexTitle": "OverlayType",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.OverlayType"
             }
           },
           {
@@ -3209,28 +3093,6 @@
             "titles": {
               "indexTitle": "TextWrapping",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextWrapping"
-            }
-          },
-          {
-            "comment": {
-              "brief": "Available TimePicker style",
-              "full": "Available TimePicker style"
-            },
-            "id": {
-              "id": "fuse/controls/timepickerstyle",
-              "parentId": "fuse/controls",
-              "type": "Enum",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/timepickerstyle",
-              "href": "fuse/controls/timepickerstyle"
-            },
-            "titles": {
-              "indexTitle": "TimePickerStyle",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TimePickerStyle"
             }
           }
         ]

@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -554,6 +554,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class Slider : Fuse.Controls.RangeControl {}"
+    },
+    "comment": {
+      "brief": "A slider control.\nHas the same interface as any other @RangeControl, such as the default @Slider.",
+      "full": "A slider control.\nHas the same interface as any other @RangeControl, such as the default @Slider."
     }
   },
   "tableOfContents": {

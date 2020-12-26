@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -524,6 +524,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class Donut : Fuse.Controls.Circle {}"
+    },
+    "comment": {
+      "brief": "A colored circle, generally used to communicate category.",
+      "full": "A colored circle, generally used to communicate category.\n\n    <Alive.Donut StrokeColor=\"{Resource Alive.Red}\" />\n\nSee also [ColorBadge](api:alive/colorbadge)"
     }
   },
   "tableOfContents": {

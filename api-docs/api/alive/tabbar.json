@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -491,6 +491,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class TabBar : Fuse.Controls.Panel {}"
+    },
+    "comment": {
+      "brief": "A PageIndicator that uses values provided by the `Label` property of [TabPage](api:alive/tabpage)\nto instantiate tabs with text labels for each page in a @PageControl or other @LinearNavigation.",
+      "full": "A PageIndicator that uses values provided by the `Label` property of [TabPage](api:alive/tabpage)\nto instantiate tabs with text labels for each page in a @PageControl or other @LinearNavigation.\n\n*Note:* You can use the simpler [TabPageControl](api:alive/tabpagecontrol) in most cases,\nwhich combines a `TabBar` with a @PageControl.\n\nYou must specify a `Navigation`, which refers to the @PageControl or other @LinearNavigation\nthat contains the pages.\n\n    <DockPanel>\n        <Alive.TabBar Dock=\"Top\" Navigation=\"pageControl\" />\n        <PageControl ux:Name=\"pageControl\">\n            <Alive.TabPage Label=\"Page 1\">\n                <!-- page content -->\n            </Alive.TabPage>\n            <Alive.TabPage Label=\"Page 2\">\n                <!-- page content -->\n            </Alive.TabPage>\n            <Alive.TabPage Label=\"Page 3\">\n                <!-- page content -->\n            </Alive.TabPage>\n        </PageControl>\n    </DockPanel>"
     }
   },
   "tableOfContents": {

@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -678,30 +678,6 @@
             }
           },
           {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "alive/title/maxfontscale",
-              "parentId": "alive/title",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "alive/title/maxfontscale",
-              "href": "fuse/controls/textcontrol/maxfontscale",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "MaxFontScale",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxFontScale"
-            }
-          },
-          {
             "comment": {
               "brief": "Specifies the max number of characters that the Value can have",
               "full": "Specifies the max number of characters that the Value can have"
@@ -727,30 +703,6 @@
             "titles": {
               "indexTitle": "MaxLength",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLength"
-            }
-          },
-          {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "alive/title/minfontscale",
-              "parentId": "alive/title",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "alive/title/minfontscale",
-              "href": "fuse/controls/textcontrol/minfontscale",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "MinFontScale",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MinFontScale"
             }
           },
           {
@@ -2483,30 +2435,6 @@
           }
         },
         "items": [
-          {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "alive/title/fontsizescaled",
-              "parentId": "alive/title",
-              "type": "Property",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "alive/title/fontsizescaled",
-              "href": "fuse/controls/textcontrol/fontsizescaled",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "FontSizeScaled",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.FontSizeScaled"
-            }
-          },
           {
             "returns": {
               "href": "uno/bool",

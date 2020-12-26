@@ -4,32 +4,8 @@
       "namespaceTitle": "Uno.Runtime.Implementation.Internal",
       "namespaceUri": "uno/runtime/implementation/internal",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
-    "attributes": [
-      {
-        "parameters": [
-          "Please use Uno.Platform.Internal.Unsafe instead"
-        ],
-        "id": {
-          "id": "uno/obsoleteattribute",
-          "parentId": "uno",
-          "type": "Class",
-          "modifiers": [
-            "public",
-            "sealed"
-          ]
-        },
-        "uri": {
-          "idUri": "uno/obsoleteattribute",
-          "href": "uno/obsoleteattribute"
-        },
-        "titles": {
-          "indexTitle": "ObsoleteAttribute",
-          "fullyQualifiedIndexTitle": "Uno.ObsoleteAttribute"
-        }
-      }
-    ],
     "id": {
       "id": "uno/runtime/implementation/internal/unsafe",
       "parentId": "uno/runtime/implementation/internal",
@@ -51,7 +27,7 @@
       "fullyQualifiedIndexTitle": "Uno.Runtime.Implementation.Internal.Unsafe"
     },
     "syntax": {
-      "uno": "[Uno.Obsolete(message = \"Please use Uno.Platform.Internal.Unsafe instead\")]\npublic static class Unsafe {}"
+      "uno": "public static class Unsafe {}"
     }
   },
   "tableOfContents": {

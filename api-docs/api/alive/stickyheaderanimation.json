@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -268,6 +268,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class StickyHeaderAnimation : Fuse.Triggers.ScrollingAnimation {}"
+    },
+    "comment": {
+      "brief": "Animation that progresses as a [StickyHeader](api:alive/stickyheader) begins sticking,\nwithin to a given distance.",
+      "full": "Animation that progresses as a [StickyHeader](api:alive/stickyheader) begins sticking,\nwithin to a given distance.\n\nNot to be confused with [StickyHeaderAnimation](api:alive/stickyheaderanimation).\n\nThe `Distance` property determines the distance from where the header starts sticking that must be scrolled,\nfor the animation to progress from start to finish.\n\n    <ScrollView>\n        <StackPanel>\n            <Alive.StickyHeader>\n                <Panel ux:Binding=\"Header\" Height=\"60\" Color=\"{Resource Alive.AccentColor}\">\n                    <Shadow ux:Name=\"shadow\" Size=\"0\" />\n                </Panel>\n                <Alive.StickingAnimation Distance=\"60\">\n                    <Change shadow.Size=\"1\" />\n                </Alive.StickingAnimation>\n            </Alive.StickyHeader>\n        </StackPanel>\n    </ScrollView>"
     }
   },
   "tableOfContents": {

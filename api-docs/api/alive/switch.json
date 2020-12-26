@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -554,6 +554,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class Switch : Fuse.Controls.ToggleControl {}"
+    },
+    "comment": {
+      "brief": "A Switch control that can be swiped.\nHas the same interface as any other @ToggleControl, such as the default @Switch.",
+      "full": "A Switch control that can be swiped.\nHas the same interface as any other @ToggleControl, such as the default @Switch."
     }
   },
   "tableOfContents": {

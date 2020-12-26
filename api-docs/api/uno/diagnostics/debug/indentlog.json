@@ -4,30 +4,9 @@
       "namespaceTitle": "Uno.Diagnostics",
       "namespaceUri": "uno/diagnostics",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "parameters": [],
-    "attributes": [
-      {
-        "id": {
-          "id": "uno/obsoleteattribute",
-          "parentId": "uno",
-          "type": "Class",
-          "modifiers": [
-            "public",
-            "sealed"
-          ]
-        },
-        "uri": {
-          "idUri": "uno/obsoleteattribute",
-          "href": "uno/obsoleteattribute"
-        },
-        "titles": {
-          "indexTitle": "ObsoleteAttribute",
-          "fullyQualifiedIndexTitle": "Uno.ObsoleteAttribute"
-        }
-      }
-    ],
     "id": {
       "id": "uno/diagnostics/debug/indentlog",
       "parentId": "uno/diagnostics/debug",
@@ -49,7 +28,7 @@
       "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.IndentLog"
     },
     "syntax": {
-      "uno": "[Uno.Obsolete]\npublic static voidIndentLog() {}"
+      "uno": "public static voidIndentLog() {}"
     }
   },
   "tableOfContents": {}

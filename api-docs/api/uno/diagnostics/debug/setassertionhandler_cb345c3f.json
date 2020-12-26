@@ -4,7 +4,7 @@
       "namespaceTitle": "Uno.Diagnostics",
       "namespaceUri": "uno/diagnostics",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "parameters": [
       {
@@ -12,27 +12,6 @@
         "href": "uno/diagnostics/assertionhandler",
         "title": "AssertionHandler (bool, string, string, int, object[])",
         "fullyQualifiedTitle": "Uno.Diagnostics.AssertionHandler (bool, string, string, int, object[])"
-      }
-    ],
-    "attributes": [
-      {
-        "id": {
-          "id": "uno/obsoleteattribute",
-          "parentId": "uno",
-          "type": "Class",
-          "modifiers": [
-            "public",
-            "sealed"
-          ]
-        },
-        "uri": {
-          "idUri": "uno/obsoleteattribute",
-          "href": "uno/obsoleteattribute"
-        },
-        "titles": {
-          "indexTitle": "ObsoleteAttribute",
-          "fullyQualifiedIndexTitle": "Uno.ObsoleteAttribute"
-        }
       }
     ],
     "id": {
@@ -56,7 +35,7 @@
       "fullyQualifiedIndexTitle": "Uno.Diagnostics.Debug.SetAssertionHandler(Uno.Diagnostics.AssertionHandler (bool, string, string, int, object[]))"
     },
     "syntax": {
-      "uno": "[Uno.Obsolete]\npublic static voidSetAssertionHandler(Uno.Diagnostics.AssertionHandler (bool, string, string, int, object[]) handler) {}"
+      "uno": "public static voidSetAssertionHandler(Uno.Diagnostics.AssertionHandler (bool, string, string, int, object[]) handler) {}"
     }
   },
   "tableOfContents": {}

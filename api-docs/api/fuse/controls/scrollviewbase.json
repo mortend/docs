@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.ScrollView",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -715,8 +715,8 @@
           },
           {
             "comment": {
-              "brief": "Enables/disables the ability for the user to scroll the control. When `false` the user cannot interact with the control but it can still be scrolled programmatically.",
-              "full": "Enables/disables the ability for the user to scroll the control. When `false` the user cannot interact with the control but it can still be scrolled programmatically."
+              "brief": "Enables/disables the ability for the user to scroll the control. When `false` the user cannot interact with the control but it can still be scrolled programamtically.",
+              "full": "Enables/disables the ability for the user to scroll the control. When `false` the user cannot interact with the control but it can still be scrolled programamtically."
             },
             "returns": {
               "href": "uno/bool",

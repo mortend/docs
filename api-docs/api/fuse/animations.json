@@ -73,7 +73,10 @@
           {
             "comment": {
               "brief": "A configuration for use with the `attract` expression or to an `Attractor` property.",
-              "full": "A configuration for use with the `attract` expression or to an `Attractor` property.\n\nA single `AttractorConfig` can be used for multiple `attract` expressions."
+              "full": "A configuration for use with the `attract` expression or to an `Attractor` property.\n\nA single `AttractorConfig` can be used for multiple `attract` expressions.",
+              "attributes": {
+                "experimental": true
+              }
             },
             "id": {
               "id": "fuse/animations/attractorconfig",

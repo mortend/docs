@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -478,7 +478,10 @@
     },
     "comment": {
       "brief": "A layout and enumeration for the axis steps of a @Plot, which is used to place labels on axes. Often used together with a @(GridLayout) for positioning.",
-      "full": "A layout and enumeration for the axis steps of a @Plot, which is used to place labels on axes. Often used together with a @(GridLayout) for positioning.\n\n# Example\n\nThe following example places labels on the y-axis of a bar chart.\n\n    <Panel xmlns:c=\"Fuse.Charting\" >\n        <JavaScript>\n            var Observable = require(\"FuseJS/Observable\");\n\n            function Item(val) {\n                this.value = val;\n            }\n            var data = Observable(new Item(3), new Item(4), new Item(6), new Item(3), new Item(4));\n\n            module.exports = {\n                data: data\n            }\n        </JavaScript>\n        <Panel BoxSizing=\"FillAspect\" Aspect=\"1\">\n            <c:Plot Margin=\"40\">\n                <GridLayout Rows=\"1*,40\" Columns=\"40,1*\"/>\n                <c:DataSeries Data=\"{data}\" />\n                <c:PlotAxis Row=\"0\" Column=\"0\" Axis=\"Y\">\n                    <Text ux:Template=\"Label\" Alignment=\"Center\" FontSize=\"14\" Color=\"#666\"\n                        Value=\"{Plot axis.value}\"/>\n                </c:PlotAxis>\n                <c:PlotData>\n                    <c:PlotBar Row=\"0\" Column=\"1\">\n                        <Rectangle Color=\"#F00\" Height=\"100%\" Margin=\"2\" Alignment=\"Bottom\"/>\n                    </c:PlotBar>\n                </c:PlotData>\n            </c:Plot>\n        </Panel>\n    </Panel>"
+      "full": "A layout and enumeration for the axis steps of a @Plot, which is used to place labels on axes. Often used together with a @(GridLayout) for positioning.\n\n# Example\n\nThe following example places labels on the y-axis of a bar chart.\n\n    <Panel xmlns:c=\"Fuse.Charting\" >\n        <JavaScript>\n            var Observable = require(\"FuseJS/Observable\");\n\n            function Item(val) {\n                this.value = val;\n            }\n            var data = Observable(new Item(3), new Item(4), new Item(6), new Item(3), new Item(4));\n\n            module.exports = {\n                data: data\n            }\n        </JavaScript>\n        <Panel BoxSizing=\"FillAspect\" Aspect=\"1\">\n            <c:Plot Margin=\"40\">\n                <GridLayout Rows=\"1*,40\" Columns=\"40,1*\"/>\n                <c:DataSeries Data=\"{data}\" />\n                <c:PlotAxis Row=\"0\" Column=\"0\" Axis=\"Y\">\n                    <Text ux:Template=\"Label\" Alignment=\"Center\" FontSize=\"14\" Color=\"#666\"\n                        Value=\"{Plot axis.value}\"/>\n                </c:PlotAxis>\n                <c:PlotData>\n                    <c:PlotBar Row=\"0\" Column=\"1\">\n                        <Rectangle Color=\"#F00\" Height=\"100%\" Margin=\"2\" Alignment=\"Bottom\"/>\n                    </c:PlotBar>\n                </c:PlotData>\n            </c:Plot>\n        </Panel>\n    </Panel>",
+      "attributes": {
+        "experimental": true
+      }
     }
   },
   "tableOfContents": {

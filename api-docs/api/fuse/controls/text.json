@@ -24,7 +24,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.Primitives",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -473,13 +473,7 @@
     },
     "comment": {
       "brief": "Displays a block of text.",
-      "full": "Displays a block of text.\n\nThe `Text` UI-control renders read-only text.\n\nYou can import a @Font from ttf files containing TrueType fonts. Because a font is typically referred to throughout an application, it is best to simply create a global resource for it using `ux:Global`. This way of importing the font ensures that the font is available throughout the whole project, and is only loaded once.\n\n> **Note**\n>\n> When running desktop preview, neither fallback fonts, colored glyphs, nor Unicode characters outside the basic multilingual plane are supported.\n>\n> Because of this, **certain text features (e.g. emoji) are not supported when running local preview.**\n> Do not be surprised if desktop rendering doesn't match device rendering 100%. This is an issue that is being worked on.\r\n\n# Examples \n\n## Text properties\n\n```\n<Text Color=\"#999\">Left</Text>\n<Text TextAlignment=\"Center\">Center</Text>\n<Text FontSize=\"24\" TextAlignment=\"Right\">Right</Text>\n<Text LineSpacing=\"10\">\nMultiple\nLines\n</Text>\n```\n\nIn this example, the first text element will be left aligned as this is the default, and have its color set to a medium light grey. The second text will be center aligned. The third will be right aligned and have a larger font. The fourth will span two lines with 10 points of space inbetween.\n\n## Custom text-components\n\n\t<App>\n\t\t<Font File=\"Roboto-Medium.ttf\" ux:Global=\"Medium\" />\n\t\t<Font File=\"Roboto-Light.ttf\" ux:Global=\"Light\" />\n\n\t\t<Text ux:Class=\"Light\" Font=\"Light\" />\n\t\t<Text ux:Class=\"Medium\" Font=\"Medium\" TextWrapping=\"Wrap\" />\n\t\t<Text ux:Class=\"Warning\" \n\t\t\tFont=\"Medium\" \n\t\t\tFontSize=\"42\"\n\t\t\tTextAlignment=\"Center\"\n\t\t\tColor=\"#f00\" />\n\t\t\t\n\t\t<StackPanel>\n\t\t\t<Light>Just some text</Light>\n\t\t\t<Warning>The robots are coming!</Warning>\n\t\t\t<Medium>This is just some medium text, but it will happily wrap when the edges of the screen is reached.</Medium>\n\t\t</StackPanel>\n\t</App>\n\nIn this example we load two fonts and create three different semantic classes, `Light`, `Medium` and `Warning`, combining some of the available `Text` properties. In this example, the fonts are located in the same directory as the relevant UX file. \r\n\n# Remarks\n\n`Text` is the primary control for displaying read-only text in apps.",
-      "attributes": {
-        "seeAlso": [
-          "Fuse.Controls.TextInput",
-          "Fuse.Font"
-        ]
-      }
+      "full": "Displays a block of text.\n\nThe `Text` UI-control renders read-only text.\n\nYou can import a @Font from ttf files containing TrueType fonts. Because a font is typically referred to throughout an application, it is best to simply create a global resource for it using `ux:Global`. This way of importing the font ensures that the font is available throughout the whole project, and is only loaded once.\n\n> **Note**\n>\n> When running desktop preview, neither fallback fonts, colored glyphs, nor Unicode characters outside the basic multilingual plane are supported.\n>\n> Because of this, **certain text features (e.g. emoji) are not supported when running local preview.**\n> Do not be surprised if desktop rendering doesn't match device rendering 100%. This is an issue that is being worked on.\n\n# Examples \n\n## Text properties\n\n```\n<Text Color=\"#999\">Left</Text>\n<Text TextAlignment=\"Center\">Center</Text>\n<Text FontSize=\"24\" TextAlignment=\"Right\">Right</Text>\n<Text LineSpacing=\"10\">\nMultiple\nLines\n</Text>\n```\n\nIn this example, the first text element will be left aligned as this is the default, and have its color set to a medium light grey. The second text will be center aligned. The third will be right aligned and have a larger font. The fourth will span two lines with 10 points of space inbetween.\n\n## Custom text-components\n\n\t<App>\n\t\t<Font File=\"Roboto-Medium.ttf\" ux:Global=\"Medium\" />\n\t\t<Font File=\"Roboto-Light.ttf\" ux:Global=\"Light\" />\n\n\t\t<Text ux:Class=\"Light\" Font=\"Light\" />\n\t\t<Text ux:Class=\"Medium\" Font=\"Medium\" TextWrapping=\"Wrap\" />\n\t\t<Text ux:Class=\"Warning\" \n\t\t\tFont=\"Medium\" \n\t\t\tFontSize=\"42\"\n\t\t\tTextAlignment=\"Center\"\n\t\t\tColor=\"#f00\" />\n\t\t\t\n\t\t<StackPanel>\n\t\t\t<Light>Just some text</Light>\n\t\t\t<Warning>The robots are coming!</Warning>\n\t\t\t<Medium>This is just some medium text, but it will happily wrap when the edges of the screen is reached.</Medium>\n\t\t</StackPanel>\n\t</App>\n\nIn this example we load two fonts and create three different semantic classes, `Light`, `Medium` and `Warning`, combining some of the available `Text` properties. In this example, the fonts are located in the same directory as the relevant UX file. \n\n# Remarks\n\n`Text` is the primary control for displaying read-only text in apps."
     }
   },
   "tableOfContents": {
@@ -666,30 +660,6 @@
             }
           },
           {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "fuse/controls/text/maxfontscale",
-              "parentId": "fuse/controls/text",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/text/maxfontscale",
-              "href": "fuse/controls/textcontrol/maxfontscale",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "MaxFontScale",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxFontScale"
-            }
-          },
-          {
             "comment": {
               "brief": "Specifies the max number of characters that the Value can have",
               "full": "Specifies the max number of characters that the Value can have"
@@ -715,30 +685,6 @@
             "titles": {
               "indexTitle": "MaxLength",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLength"
-            }
-          },
-          {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "fuse/controls/text/minfontscale",
-              "parentId": "fuse/controls/text",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/text/minfontscale",
-              "href": "fuse/controls/textcontrol/minfontscale",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "MinFontScale",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MinFontScale"
             }
           },
           {
@@ -4015,30 +3961,6 @@
           }
         },
         "items": [
-          {
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "fuse/controls/text/fontsizescaled",
-              "parentId": "fuse/controls/text",
-              "type": "Property",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/text/fontsizescaled",
-              "href": "fuse/controls/textcontrol/fontsizescaled",
-              "isVirtual": true
-            },
-            "titles": {
-              "indexTitle": "FontSizeScaled",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.FontSizeScaled"
-            }
-          },
           {
             "returns": {
               "href": "uno/bool",

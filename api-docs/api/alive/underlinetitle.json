@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -491,6 +491,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class UnderlineTitle : Fuse.Controls.Panel {}"
+    },
+    "comment": {
+      "brief": "A title with an underline that extends to the left.",
+      "full": "A title with an underline that extends to the left.\n\n    <Alive.UnderlineTitle Text=\"Hello, world\" />"
     }
   },
   "tableOfContents": {

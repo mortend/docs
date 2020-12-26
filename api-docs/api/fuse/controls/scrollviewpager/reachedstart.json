@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.ScrollView",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "returns": {
       "href": "fuse/controls/scrollviewpager/scrollviewpagerhandler",
@@ -36,12 +36,7 @@
     },
     "comment": {
       "brief": "Raised when the `ScrollView` comes near the start of the data.",
-      "full": "Raised when the `ScrollView` comes near the start of the data.",
-      "attributes": {
-        "seeAlso": [
-          "ReachedEnd"
-        ]
-      }
+      "full": "Raised when the `ScrollView` comes near the start of the data."
     }
   },
   "tableOfContents": {}

@@ -4,7 +4,7 @@
       "namespaceTitle": "Uno",
       "namespaceUri": "uno",
       "packageName": "UnoCore",
-      "packageVersion": "2.0.0-beta.7"
+      "packageVersion": "1.11.1"
     },
     "parameters": [
       {
@@ -41,6 +41,11 @@
     },
     "syntax": {
       "uno": "public static float3x3 Invert(float3x3 value) {}"
+    },
+    "comment": {
+      "attributes": {
+        "deprecated": true
+      }
     }
   },
   "tableOfContents": {}

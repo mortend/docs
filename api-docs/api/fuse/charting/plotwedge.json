@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -561,60 +561,6 @@
             "titles": {
               "indexTitle": "Attractor",
               "fullyQualifiedIndexTitle": "Fuse.Charting.PlotWedge.Attractor"
-            }
-          },
-          {
-            "comment": {
-              "brief": "Specifies where on a circle to start drawing our wedges.",
-              "full": "Specifies where on a circle to start drawing our wedges.\n\nThe range is from 0 to 1, relative to the circumference of a full circle."
-            },
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "fuse/charting/plotwedge/radialoffset",
-              "parentId": "fuse/charting/plotwedge",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/charting/plotwedge/radialoffset",
-              "href": "fuse/charting/plotwedge/radialoffset"
-            },
-            "titles": {
-              "indexTitle": "RadialOffset",
-              "fullyQualifiedIndexTitle": "Fuse.Charting.PlotWedge.RadialOffset"
-            }
-          },
-          {
-            "comment": {
-              "brief": "Specifies how much of a circle our wedges will consume.",
-              "full": "Specifies how much of a circle our wedges will consume.\n\nThe range is from 0 to 1, relative to the circumference of a full circle."
-            },
-            "returns": {
-              "href": "uno/float",
-              "title": "float",
-              "fullyQualifiedTitle": "float"
-            },
-            "id": {
-              "id": "fuse/charting/plotwedge/radialscale",
-              "parentId": "fuse/charting/plotwedge",
-              "type": "UxProperty",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/charting/plotwedge/radialscale",
-              "href": "fuse/charting/plotwedge/radialscale"
-            },
-            "titles": {
-              "indexTitle": "RadialScale",
-              "fullyQualifiedIndexTitle": "Fuse.Charting.PlotWedge.RadialScale"
             }
           }
         ]
@@ -4129,12 +4075,17 @@
         },
         "items": [
           {
+            "comment": {
+              "brief": "Creates a new PlotWedge",
+              "full": "Creates a new PlotWedge"
+            },
             "id": {
               "id": "fuse/charting/plotwedge/_ctor",
               "parentId": "fuse/charting/plotwedge",
               "type": "Constructor",
               "modifiers": [
-                "public"
+                "public",
+                "generated"
               ]
             },
             "uri": {

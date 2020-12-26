@@ -193,24 +193,6 @@
     },
     {
       "id": {
-        "id": "fuse/gestures/holdpressargs",
-        "parentId": "fuse/gestures",
-        "type": "Class",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/gestures/holdpressargs",
-        "href": "fuse/gestures/holdpressargs"
-      },
-      "titles": {
-        "indexTitle": "HoldPressArgs",
-        "fullyQualifiedIndexTitle": "Fuse.Gestures.HoldPressArgs"
-      }
-    },
-    {
-      "id": {
         "id": "fuse/gestures/longpressedargs",
         "parentId": "fuse/gestures",
         "type": "Class",
@@ -552,42 +534,6 @@
       "titles": {
         "indexTitle": "NavigationArgs",
         "fullyQualifiedIndexTitle": "Fuse.Navigation.NavigationArgs"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/physics/draggableeventargs",
-        "parentId": "fuse/physics",
-        "type": "Class",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/draggableeventargs",
-        "href": "fuse/physics/draggableeventargs"
-      },
-      "titles": {
-        "indexTitle": "DraggableEventArgs",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DraggableEventArgs"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/physics/droppableeventargs",
-        "parentId": "fuse/physics",
-        "type": "Class",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/physics/droppableeventargs",
-        "href": "fuse/physics/droppableeventargs"
-      },
-      "titles": {
-        "indexTitle": "DroppableEventArgs",
-        "fullyQualifiedIndexTitle": "Fuse.Physics.DroppableEventArgs"
       }
     },
     {

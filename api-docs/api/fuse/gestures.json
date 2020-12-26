@@ -136,28 +136,6 @@
             }
           },
           {
-            "comment": {
-              "brief": "Triggers when a pointer is pressed on a @Visual.",
-              "full": "Triggers when a pointer is pressed on a @Visual.\n\nThe `HoldPress` trigger is a repeating trigger that will continue to pulse as long as a @Visual is being held.\n\n# Example\nIn this example, a panel will scale and call a JS callback `pressed` for every 0.2 seconds, when pressed:\n\n    <Panel Background=\"#F00\">\n        <HoldPress First=\"true\" Handler=\"{pressed}\" Delay=\"0.5\" Repeat=\"0.2\">\n            <Scale Target=\"rect\" Vector=\"1.2\" Duration=\"0.2\" />\n        </HoldPress>\n    </Panel>"
-            },
-            "id": {
-              "id": "fuse/gestures/holdpress",
-              "parentId": "fuse/gestures",
-              "type": "UxClass",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/gestures/holdpress",
-              "href": "fuse/gestures/holdpress"
-            },
-            "titles": {
-              "indexTitle": "HoldPress",
-              "fullyQualifiedIndexTitle": "Fuse.Gestures.HoldPress"
-            }
-          },
-          {
             "id": {
               "id": "fuse/gestures/keepfocusinview",
               "parentId": "fuse/gestures",
@@ -711,24 +689,6 @@
           },
           {
             "id": {
-              "id": "fuse/gestures/holdpressargs",
-              "parentId": "fuse/gestures",
-              "type": "Class",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/gestures/holdpressargs",
-              "href": "fuse/gestures/holdpressargs"
-            },
-            "titles": {
-              "indexTitle": "HoldPressArgs",
-              "fullyQualifiedIndexTitle": "Fuse.Gestures.HoldPressArgs"
-            }
-          },
-          {
-            "id": {
               "id": "fuse/gestures/keepinviewcommon",
               "parentId": "fuse/gestures",
               "type": "Class",
@@ -894,38 +854,6 @@
             "titles": {
               "indexTitle": "DoubleTappedHandler (object, DoubleTappedArgs)",
               "fullyQualifiedIndexTitle": "Fuse.Gestures.DoubleTappedHandler (object, Fuse.Gestures.DoubleTappedArgs)"
-            }
-          },
-          {
-            "parameters": [
-              {
-                "name": "sender",
-                "href": "uno/object",
-                "title": "object",
-                "fullyQualifiedTitle": "object"
-              },
-              {
-                "name": "args",
-                "href": "fuse/gestures/holdpressargs",
-                "title": "HoldPressArgs",
-                "fullyQualifiedTitle": "Fuse.Gestures.HoldPressArgs"
-              }
-            ],
-            "id": {
-              "id": "fuse/gestures/holdpresshandler",
-              "parentId": "fuse/gestures",
-              "type": "Delegate",
-              "modifiers": [
-                "public"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/gestures/holdpresshandler",
-              "href": "fuse/gestures/holdpresshandler"
-            },
-            "titles": {
-              "indexTitle": "HoldPressHandler (object, HoldPressArgs)",
-              "fullyQualifiedIndexTitle": "Fuse.Gestures.HoldPressHandler (object, Fuse.Gestures.HoldPressArgs)"
             }
           },
           {

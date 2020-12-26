@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Input",
       "namespaceUri": "fuse/input",
       "packageName": "Fuse.Nodes",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "returns": {
       "href": "fuse/input/gesturetype",

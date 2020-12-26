@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -517,6 +517,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ContentGradient : Fuse.Controls.Rectangle {}"
+    },
+    "comment": {
+      "brief": "A @Rectangle with a gradient fading out near the bottom of an element.",
+      "full": "A @Rectangle with a gradient fading out near the bottom of an element.\n\n    <Panel>\n        <Alive.ContentGradient />\n        <Image File=\"image.jpg\" />\n    </Panel>"
     }
   },
   "tableOfContents": {

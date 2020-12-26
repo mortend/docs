@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.WebSocket",
       "namespaceUri": "fuse/websocket",
       "packageName": "Fuse.WebSockets",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {

@@ -23,7 +23,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -517,6 +517,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class CallToActionButton : Fuse.Controls.Rectangle {}"
+    },
+    "comment": {
+      "brief": "A call-to-action button that can optionally have a glowing outline.",
+      "full": "A call-to-action button that can optionally have a glowing outline.\n\n    <Alive.CallToActionButton Text=\"Buy now!\" />\n    <Alive.CallToActionButton Text=\"Look at it glow!\" Glow=\"true\" />"
     }
   },
   "tableOfContents": {

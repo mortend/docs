@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -111,6 +111,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class ImageFill : Fuse.Drawing.ImageFill {}"
+    },
+    "comment": {
+      "brief": "Fully covers a @Shape (such as a [Card](api:alive/card), @Circle or @Rectangle) with an image.",
+      "full": "Fully covers a @Shape (such as a [Card](api:alive/card), @Circle or @Rectangle) with an image.\n\nThis is simply an @ImageFill with `StretchMode=\"UniformToFill\"` and is included for convenience.\n\n    <Alive.Card>\n        <Alive.ImageFill File=\"Assets/image.jpg\" />\n    </Alive.Card>"
     }
   },
   "tableOfContents": {

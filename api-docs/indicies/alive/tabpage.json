@@ -20,6 +20,10 @@
   },
   "descendants": [
     {
+      "comment": {
+        "brief": "A variant of [TabPage](api:alive/tabpage) that keeps the previous and next pages partially in view.",
+        "full": "A variant of [TabPage](api:alive/tabpage) that keeps the previous and next pages partially in view.\n\n**Note:* The enclosing @PageControl must have the\n[InactiveState](api:fuse/controls/pagecontrol/inactivestate) property set to\n[Unchanged](api:fuse/controls/navigationcontrolinactivestate/unchanged).\n[TabPageControl](api:alive/tabpagecontrol) does this automatically.\n\nSee [TabPage](api:alive/tabpage) for usage."
+      },
       "id": {
         "id": "alive/partialtabpage",
         "parentId": "alive",

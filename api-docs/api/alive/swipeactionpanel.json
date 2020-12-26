@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -497,6 +497,10 @@
     },
     "syntax": {
       "uno": "[Uno.Compiler.UxGenerated]\npublic partial class SwipeActionPanel : Fuse.Controls.Container {}"
+    },
+    "comment": {
+      "brief": "Reveals a button when the user swipes left on its contents.\nA confirmation message is shown when the button is tapped.",
+      "full": "Reveals a button when the user swipes left on its contents.\nA confirmation message is shown when the button is tapped.\n\n```\n<Alive.SwipeActionPanel ButtonText=\"Do nothing\" ConfirmationText=\"And thus, nothing was done\">\n    <Panel Color=\"#fff\" Height=\"80\" />\n</Alive.SwipeActionPanel>\n```\n\nWhen the button is tapped, this component will raise a UserEvent named Alive.SwipeActionConfirmed.\nYou can handle this event using the Alive.SwipeActionConfirmed trigger.\n\n    <JavaScript>\n        exports.onConfirmed = function() {\n            doSomething();\n        }\n    </JavaScript>\n\n    <Alive.SwipeActionPanel>\n        <Alive.SwipeActionConfirmed Handler=\"{onConfirmed}\" />\n\n    </Alive.SwipeActionPanel>\n\nThe button has a red color by default, and fades into yellow following the confirmation animation.\nYou can customize this gradient using the GradientStartColor and GradientEndColor properties.\n\nTip: Alive provides a set of default gradients, as seen in the example below.\n\n    <Alive.SwipeActionPanel GradientStartColor=\"Alive.Gradient1.StartColor\" GradientEndColor=\"Alive.Gradient1.EndColor\">\n\nBy default, the confirmation message is hidden after a short duration.\nThis behavior can be disabled using the StayOpen property.\nIt is useful for preventing the confirmation animation from playing at the same time as a RemovingAnimation,\nfor cases where the button causes its containing element to be removed from a list.\n\n    <Panel>\n        <Alive.SwipeActionPanel StayOpen=\"true\">\n            <!-- Content -->\n        </Alive.SwipeActionPanel>\n\n        <RemovingAnimation>\n            <Scale Factor=\"0\" Duration=\".4\" />\n        </RemovingAnimation>\n    </Panel>"
     }
   },
   "tableOfContents": {

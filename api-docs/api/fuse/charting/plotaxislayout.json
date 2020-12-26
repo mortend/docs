@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "2.0.0-beta.3"
+      "packageVersion": "1.11.2"
     },
     "inheritance": {
       "root": {
@@ -112,7 +112,8 @@
       "brief": "Positions elements along an axis' tick locations.",
       "full": "Positions elements along an axis' tick locations.\n\nConsider using @PlotAxis instead to provide labels for the plot. It will use this layout.",
       "attributes": {
-        "advanced": true
+        "advanced": true,
+        "experimental": true
       }
     }
   },
