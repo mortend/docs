@@ -4665,30 +4665,6 @@
     },
     {
       "comment": {
-        "attributes": {
-          "deprecated": true
-        }
-      },
-      "id": {
-        "id": "fuse/controls/rightframebackground",
-        "parentId": "fuse/controls",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/controls/rightframebackground",
-        "href": "fuse/controls/rightframebackground"
-      },
-      "titles": {
-        "indexTitle": "RightFrameBackground",
-        "fullyQualifiedIndexTitle": "Fuse.Controls.RightFrameBackground"
-      }
-    },
-    {
-      "comment": {
         "brief": "`SafeEdgePanel` compensates for space taken up by the on-screen keyboard, status bar, and other OS-specific elements on the edges of the screen.  It should be used for any panel that touches any edge of the screen.",
         "full": "`SafeEdgePanel` compensates for space taken up by the on-screen keyboard, status bar, and other OS-specific elements on the edges of the screen.  It should be used for any panel that touches any edge of the screen.\n\nSee the article on [Safe Layout](articles:layout/safe-layout.md) for more details."
       },
@@ -7982,7 +7958,7 @@
       "id": {
         "id": "fuse/gestures/scroller",
         "parentId": "fuse/gestures",
-        "type": "UxClass",
+        "type": "Class",
         "modifiers": [
           "public"
         ]
@@ -9748,31 +9724,6 @@
     },
     {
       "comment": {
-        "brief": "Use this class to listen for changes on a page in a navigation. This takes cares of the various\noverrides on Page/Navigation and rooting order considerations.",
-        "full": "Use this class to listen for changes on a page in a navigation. This takes cares of the various\noverrides on Page/Navigation and rooting order considerations.\n\nCreate this object at rooting time and dispose of it while unrooting.\n\n@hide",
-        "attributes": {
-          "deprecated": true
-        }
-      },
-      "id": {
-        "id": "fuse/navigation/navigationpageproxy",
-        "parentId": "fuse/navigation",
-        "type": "Class",
-        "modifiers": [
-          "public"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/navigation/navigationpageproxy",
-        "href": "fuse/navigation/navigationpageproxy"
-      },
-      "titles": {
-        "indexTitle": "NavigationPageProxy",
-        "fullyQualifiedIndexTitle": "Fuse.Navigation.NavigationPageProxy"
-      }
-    },
-    {
-      "comment": {
         "brief": "@hide",
         "full": "@hide"
       },
@@ -9830,25 +9781,6 @@
       "titles": {
         "indexTitle": "PageExpression",
         "fullyQualifiedIndexTitle": "Fuse.Navigation.PageExpression"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/navigation/pageresourcebinding_1",
-        "parentId": "fuse/navigation",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/navigation/pageresourcebinding_1",
-        "href": "fuse/navigation/pageresourcebinding_1"
-      },
-      "titles": {
-        "indexTitle": "PageResourceBinding<T>",
-        "fullyQualifiedIndexTitle": "Fuse.Navigation.PageResourceBinding<T>"
       }
     },
     {
@@ -9991,7 +9923,7 @@
       "id": {
         "id": "fuse/navigation/routermodify",
         "parentId": "fuse/navigation",
-        "type": "UxClass",
+        "type": "Class",
         "modifiers": [
           "public"
         ]
@@ -16686,29 +16618,6 @@
       "titles": {
         "indexTitle": "PlaybackAction",
         "fullyQualifiedIndexTitle": "Fuse.Triggers.Actions.PlaybackAction"
-      }
-    },
-    {
-      "comment": {
-        "brief": "Play to a specific point in a timeline",
-        "full": "Play to a specific point in a timeline\n\n## Example\n\n    <StackPanel>\n        <Rectangle Width=\"150\" Height=\"150\" Margin=\"60\" ux:Name=\"rect\" CornerRadius=\"10\" >\n            <Stroke ux:Name=\"rectStroke\" Offset=\"10\" Width=\"3\" Color=\"#3579e6\" />\n\n            <Timeline  ux:Name=\"timeline\" TimeMultiplier=\"0.4\">\n                <Rotate>\n                    <Keyframe DegreesZ=\"360\" Time=\"1\" />\n                </Rotate>\n                <Change Target=\"rect.Color\">\n                    <Keyframe Value=\"#3579e6\" Time=\"1\" />\n                </Change>\n            </Timeline>\n        </Rectangle>\n\n        <Slider Width=\"250\" ux:Name=\"targetProgress\" Value=\"0.5\" Minimum=\"0\" Maximum=\"1\" />\n        <Button Text=\"Animate to\" Alignment=\"Bottom\">\n            <Clicked>\n                <PlayTo Target=\"timeline\" Progress=\"{ReadProperty targetProgress.Value}\" />\n            </Clicked>\n        </Button>\n\n        <Button ux:Name=\"resume\" Text=\"Resume\" Alignment=\"Bottom\">\n            <Clicked>\n                <Resume Target=\"timeline\" />\n            </Clicked>\n        </Button>\n\n        <Button Text=\"Pause\" Alignment=\"Bottom\">\n            <Clicked>\n                <Pause Target=\"timeline\" />\n            </Clicked>\n        </Button>\n\n        <Button Text=\"Stop\" Alignment=\"Bottom\">\n            <Clicked>\n                <Stop Target=\"timeline\" />\n            </Clicked>\n        </Button>\n    </StackPanel>"
-      },
-      "id": {
-        "id": "fuse/triggers/actions/playto",
-        "parentId": "fuse/triggers/actions",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/triggers/actions/playto",
-        "href": "fuse/triggers/actions/playto"
-      },
-      "titles": {
-        "indexTitle": "PlayTo",
-        "fullyQualifiedIndexTitle": "Fuse.Triggers.Actions.PlayTo"
       }
     },
     {

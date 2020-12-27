@@ -3061,30 +3061,6 @@
     },
     {
       "comment": {
-        "attributes": {
-          "deprecated": true
-        }
-      },
-      "id": {
-        "id": "fuse/controls/rightframebackground",
-        "parentId": "fuse/controls",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/controls/rightframebackground",
-        "href": "fuse/controls/rightframebackground"
-      },
-      "titles": {
-        "indexTitle": "RightFrameBackground",
-        "fullyQualifiedIndexTitle": "Fuse.Controls.RightFrameBackground"
-      }
-    },
-    {
-      "comment": {
         "brief": "`SafeEdgePanel` compensates for space taken up by the on-screen keyboard, status bar, and other OS-specific elements on the edges of the screen.  It should be used for any panel that touches any edge of the screen.",
         "full": "`SafeEdgePanel` compensates for space taken up by the on-screen keyboard, status bar, and other OS-specific elements on the edges of the screen.  It should be used for any panel that touches any edge of the screen.\n\nSee the article on [Safe Layout](articles:layout/safe-layout.md) for more details."
       },
@@ -4375,7 +4351,7 @@
       "id": {
         "id": "fuse/gestures/scroller",
         "parentId": "fuse/gestures",
-        "type": "UxClass",
+        "type": "Class",
         "modifiers": [
           "public"
         ]
@@ -4978,25 +4954,6 @@
       "titles": {
         "indexTitle": "NavigationTrigger",
         "fullyQualifiedIndexTitle": "Fuse.Navigation.NavigationTrigger"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/navigation/pageresourcebinding_1",
-        "parentId": "fuse/navigation",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/navigation/pageresourcebinding_1",
-        "href": "fuse/navigation/pageresourcebinding_1"
-      },
-      "titles": {
-        "indexTitle": "PageResourceBinding<T>",
-        "fullyQualifiedIndexTitle": "Fuse.Navigation.PageResourceBinding<T>"
       }
     },
     {

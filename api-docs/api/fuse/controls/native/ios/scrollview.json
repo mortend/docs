@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Controls.Native.iOS",
       "namespaceUri": "fuse/controls/native/ios",
       "packageName": "Fuse.Controls.Native",
-      "packageVersion": "0.1.0"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {

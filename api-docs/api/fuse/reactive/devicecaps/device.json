@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Reactive",
       "namespaceUri": "fuse/reactive",
       "packageName": "Fuse.Reactive.Expressions",
-      "packageVersion": "0.1.0"
+      "packageVersion": "2.0.0-beta.3"
     },
     "returns": {
       "href": "fuse/reactive/devicecaps",

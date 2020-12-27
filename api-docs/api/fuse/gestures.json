@@ -764,6 +764,32 @@
             }
           },
           {
+            "comment": {
+              "brief": "Implements the default scrolling functionality.",
+              "full": "Implements the default scrolling functionality.\n\nThere should be no reason to instantiate/reference this class directly. It will most likely be made internal an inaccessible in a future release.",
+              "attributes": {
+                "advanced": true,
+                "deprecated": true
+              }
+            },
+            "id": {
+              "id": "fuse/gestures/scroller",
+              "parentId": "fuse/gestures",
+              "type": "Class",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/gestures/scroller",
+              "href": "fuse/gestures/scroller"
+            },
+            "titles": {
+              "indexTitle": "Scroller",
+              "fullyQualifiedIndexTitle": "Fuse.Gestures.Scroller"
+            }
+          },
+          {
             "id": {
               "id": "fuse/gestures/tappedargs",
               "parentId": "fuse/gestures",

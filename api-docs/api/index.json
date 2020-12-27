@@ -725,10 +725,6 @@
           "title": "RegularPolygon"
         },
         {
-          "uri": "fuse/controls/rightframebackground",
-          "title": "RightFrameBackground"
-        },
-        {
           "uri": "fuse/controls/safeedgepanel",
           "title": "SafeEdgePanel"
         },
@@ -987,10 +983,6 @@
           "title": "ScrollableGoto"
         },
         {
-          "uri": "fuse/gestures/scroller",
-          "title": "Scroller"
-        },
-        {
           "uri": "fuse/gestures/scrollto",
           "title": "ScrollTo"
         },
@@ -1171,10 +1163,6 @@
           "title": "PageExpression"
         },
         {
-          "uri": "fuse/navigation/pageresourcebinding_1",
-          "title": "PageResourceBinding"
-        },
-        {
           "uri": "fuse/navigation/pushroute",
           "title": "PushRoute"
         },
@@ -1189,10 +1177,6 @@
         {
           "uri": "fuse/navigation/routercancelnavigation",
           "title": "RouterCancelNavigation"
-        },
-        {
-          "uri": "fuse/navigation/routermodify",
-          "title": "RouterModify"
         },
         {
           "uri": "fuse/navigation/swipenavigate",
@@ -2129,10 +2113,6 @@
         {
           "uri": "fuse/triggers/actions/play",
           "title": "Play"
-        },
-        {
-          "uri": "fuse/triggers/actions/playto",
-          "title": "PlayTo"
         },
         {
           "uri": "fuse/triggers/actions/pulse",

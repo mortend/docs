@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Platform",
       "namespaceUri": "fuse/platform",
       "packageName": "Fuse.Platform",
-      "packageVersion": "0.1.0"
+      "packageVersion": "2.0.0-beta.3"
     },
     "returns": {
       "href": "fuse/platform/applicationstate",

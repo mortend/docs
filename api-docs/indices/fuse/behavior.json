@@ -1076,7 +1076,7 @@
       "id": {
         "id": "fuse/gestures/scroller",
         "parentId": "fuse/gestures",
-        "type": "UxClass",
+        "type": "Class",
         "modifiers": [
           "public"
         ]
@@ -1679,25 +1679,6 @@
       "titles": {
         "indexTitle": "NavigationTrigger",
         "fullyQualifiedIndexTitle": "Fuse.Navigation.NavigationTrigger"
-      }
-    },
-    {
-      "id": {
-        "id": "fuse/navigation/pageresourcebinding_1",
-        "parentId": "fuse/navigation",
-        "type": "UxClass",
-        "modifiers": [
-          "public",
-          "sealed"
-        ]
-      },
-      "uri": {
-        "idUri": "fuse/navigation/pageresourcebinding_1",
-        "href": "fuse/navigation/pageresourcebinding_1"
-      },
-      "titles": {
-        "indexTitle": "PageResourceBinding<T>",
-        "fullyQualifiedIndexTitle": "Fuse.Navigation.PageResourceBinding<T>"
       }
     },
     {

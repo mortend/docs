@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.Drawing",
       "namespaceUri": "fuse/drawing",
       "packageName": "Fuse.Drawing",
-      "packageVersion": "0.1.0"
+      "packageVersion": "2.0.0-beta.3"
     },
     "inheritance": {
       "root": {
