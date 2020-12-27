@@ -2591,25 +2591,6 @@
             }
           },
           {
-            "id": {
-              "id": "fuse/iscriptexception",
-              "parentId": "fuse",
-              "type": "Interface",
-              "modifiers": [
-                "public",
-                "abstract"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/iscriptexception",
-              "href": "fuse/iscriptexception"
-            },
-            "titles": {
-              "indexTitle": "IScriptException",
-              "fullyQualifiedIndexTitle": "Fuse.IScriptException"
-            }
-          },
-          {
             "comment": {
               "brief": "@hide",
               "full": "@hide"
