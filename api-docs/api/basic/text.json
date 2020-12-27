@@ -22,7 +22,7 @@
       "namespaceTitle": "Basic",
       "namespaceUri": "basic",
       "packageName": "Fuse.BasicTheme",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {
@@ -678,6 +678,30 @@
             }
           },
           {
+            "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "basic/text/maxfontscale",
+              "parentId": "basic/text",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "basic/text/maxfontscale",
+              "href": "fuse/controls/textcontrol/maxfontscale",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MaxFontScale",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxFontScale"
+            }
+          },
+          {
             "comment": {
               "brief": "Specifies the max number of characters that the Value can have",
               "full": "Specifies the max number of characters that the Value can have"
@@ -703,6 +727,58 @@
             "titles": {
               "indexTitle": "MaxLength",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLength"
+            }
+          },
+          {
+            "comment": {
+              "brief": "Specifies the maximum number line of text if TextWrapping set to Wrap",
+              "full": "Specifies the maximum number line of text if TextWrapping set to Wrap"
+            },
+            "returns": {
+              "href": "uno/int",
+              "title": "int",
+              "fullyQualifiedTitle": "int"
+            },
+            "id": {
+              "id": "basic/text/maxlines",
+              "parentId": "basic/text",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "basic/text/maxlines",
+              "href": "fuse/controls/textcontrol/maxlines",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MaxLines",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLines"
+            }
+          },
+          {
+            "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "basic/text/minfontscale",
+              "parentId": "basic/text",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "basic/text/minfontscale",
+              "href": "fuse/controls/textcontrol/minfontscale",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MinFontScale",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MinFontScale"
             }
           },
           {
@@ -2437,6 +2513,30 @@
         "items": [
           {
             "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "basic/text/fontsizescaled",
+              "parentId": "basic/text",
+              "type": "Property",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "basic/text/fontsizescaled",
+              "href": "fuse/controls/textcontrol/fontsizescaled",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "FontSizeScaled",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.FontSizeScaled"
+            }
+          },
+          {
+            "returns": {
               "href": "uno/bool",
               "title": "bool",
               "fullyQualifiedTitle": "bool"
@@ -3901,6 +4001,26 @@
             "titles": {
               "indexTitle": "OnMaxLengthChanged",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.OnMaxLengthChanged"
+            }
+          },
+          {
+            "id": {
+              "id": "basic/text/onmaxlineschanged",
+              "parentId": "basic/text",
+              "type": "Method",
+              "modifiers": [
+                "protected",
+                "virtual"
+              ]
+            },
+            "uri": {
+              "idUri": "basic/text/onmaxlineschanged",
+              "href": "fuse/controls/textcontrol/onmaxlineschanged",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "OnMaxLinesChanged",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.OnMaxLinesChanged"
             }
           },
           {

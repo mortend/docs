@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Navigation",
       "namespaceUri": "fuse/navigation",
       "packageName": "Fuse.Navigation",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "parameters": [
       {
@@ -54,7 +54,10 @@
             "[path",
             "parameter]+"
           ]
-        }
+        },
+        "seeAlso": [
+          "fuse/navigation/router/goto"
+        ]
       }
     }
   },

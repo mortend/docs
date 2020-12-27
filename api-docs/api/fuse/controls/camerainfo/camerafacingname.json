@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.CameraView",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "returns": {
       "href": "uno/string",

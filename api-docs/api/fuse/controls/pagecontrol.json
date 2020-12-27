@@ -24,7 +24,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.Navigation",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {
@@ -9996,55 +9996,6 @@
             "titles": {
               "indexTitle": "ToString",
               "fullyQualifiedIndexTitle": "Uno.Object.ToString"
-            }
-          }
-        ]
-      }
-    ],
-    "fields": [
-      {
-        "declaredIn": {
-          "id": {
-            "id": "fuse/controls/pagecontrol",
-            "parentId": "fuse/controls",
-            "type": "UxClass",
-            "modifiers": [
-              "public",
-              "partial"
-            ]
-          },
-          "uri": {
-            "idUri": "fuse/controls/pagecontrol",
-            "href": "fuse/controls/pagecontrol"
-          },
-          "titles": {
-            "indexTitle": "PageControl",
-            "fullyQualifiedIndexTitle": "Fuse.Controls.PageControl"
-          }
-        },
-        "items": [
-          {
-            "returns": {
-              "href": "uno/ux/selector",
-              "title": "Selector",
-              "fullyQualifiedTitle": "Uno.UX.Selector"
-            },
-            "id": {
-              "id": "fuse/controls/pagecontrol/activeindexname",
-              "parentId": "fuse/controls/pagecontrol",
-              "type": "Field",
-              "modifiers": [
-                "public",
-                "static"
-              ]
-            },
-            "uri": {
-              "idUri": "fuse/controls/pagecontrol/activeindexname",
-              "href": "fuse/controls/pagecontrol/activeindexname"
-            },
-            "titles": {
-              "indexTitle": "ActiveIndexName",
-              "fullyQualifiedIndexTitle": "Fuse.Controls.PageControl.ActiveIndexName"
             }
           }
         ]

@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "parameters": [],
     "returns": {
@@ -68,6 +68,13 @@
     },
     "syntax": {
       "uno": "public Fuse.Charting.PlotAxisMetric WAxisMetric { get; get; }"
+    },
+    "comment": {
+      "attributes": {
+        "seeAlso": [
+          "@XAxisMetric"
+        ]
+      }
     }
   },
   "tableOfContents": {}

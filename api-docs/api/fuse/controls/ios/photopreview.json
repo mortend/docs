@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Controls.iOS",
       "namespaceUri": "fuse/controls/ios",
       "packageName": "Fuse.Controls.CameraView",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {

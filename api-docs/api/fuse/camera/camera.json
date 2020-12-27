@@ -22,7 +22,7 @@
       "namespaceTitle": "Fuse.Camera",
       "namespaceUri": "fuse/camera",
       "packageName": "Fuse.Camera",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {

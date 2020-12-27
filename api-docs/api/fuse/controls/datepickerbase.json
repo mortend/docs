@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Controls.DatePicker",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {
@@ -549,6 +549,33 @@
             "titles": {
               "indexTitle": "MinValue",
               "fullyQualifiedIndexTitle": "Fuse.Controls.DatePickerBase.MinValue"
+            }
+          },
+          {
+            "comment": {
+              "brief": "DatePicker style",
+              "full": "DatePicker style"
+            },
+            "returns": {
+              "href": "fuse/controls/datepickerstyle",
+              "title": "DatePickerStyle",
+              "fullyQualifiedTitle": "Fuse.Controls.DatePickerStyle"
+            },
+            "id": {
+              "id": "fuse/controls/datepickerbase/style",
+              "parentId": "fuse/controls/datepickerbase",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/datepickerbase/style",
+              "href": "fuse/controls/datepickerbase/style"
+            },
+            "titles": {
+              "indexTitle": "Style",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.DatePickerBase.Style"
             }
           },
           {
@@ -3551,6 +3578,38 @@
             "titles": {
               "indexTitle": "SetMinValue(DateTime, IPropertyListener)",
               "fullyQualifiedIndexTitle": "Fuse.Controls.DatePickerBase.SetMinValue(Uno.DateTime, Uno.UX.IPropertyListener)"
+            }
+          },
+          {
+            "parameters": [
+              {
+                "name": "value",
+                "href": "fuse/controls/datepickerstyle",
+                "title": "DatePickerStyle",
+                "fullyQualifiedTitle": "Fuse.Controls.DatePickerStyle"
+              },
+              {
+                "name": "origin",
+                "href": "uno/ux/ipropertylistener",
+                "title": "IPropertyListener",
+                "fullyQualifiedTitle": "Uno.UX.IPropertyListener"
+              }
+            ],
+            "id": {
+              "id": "fuse/controls/datepickerbase/setstyle_8bb4dc60",
+              "parentId": "fuse/controls/datepickerbase",
+              "type": "Method",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/datepickerbase/setstyle_8bb4dc60",
+              "href": "fuse/controls/datepickerbase/setstyle_8bb4dc60"
+            },
+            "titles": {
+              "indexTitle": "SetStyle(DatePickerStyle, IPropertyListener)",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.DatePickerBase.SetStyle(Fuse.Controls.DatePickerStyle, Uno.UX.IPropertyListener)"
             }
           },
           {

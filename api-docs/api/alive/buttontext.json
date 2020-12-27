@@ -22,7 +22,7 @@
       "namespaceTitle": "Alive",
       "namespaceUri": "alive",
       "packageName": "Fuse.UXKits.Alive",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {
@@ -678,6 +678,30 @@
             }
           },
           {
+            "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "alive/buttontext/maxfontscale",
+              "parentId": "alive/buttontext",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "alive/buttontext/maxfontscale",
+              "href": "fuse/controls/textcontrol/maxfontscale",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MaxFontScale",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxFontScale"
+            }
+          },
+          {
             "comment": {
               "brief": "Specifies the max number of characters that the Value can have",
               "full": "Specifies the max number of characters that the Value can have"
@@ -703,6 +727,58 @@
             "titles": {
               "indexTitle": "MaxLength",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLength"
+            }
+          },
+          {
+            "comment": {
+              "brief": "Specifies the maximum number line of text if TextWrapping set to Wrap",
+              "full": "Specifies the maximum number line of text if TextWrapping set to Wrap"
+            },
+            "returns": {
+              "href": "uno/int",
+              "title": "int",
+              "fullyQualifiedTitle": "int"
+            },
+            "id": {
+              "id": "alive/buttontext/maxlines",
+              "parentId": "alive/buttontext",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "alive/buttontext/maxlines",
+              "href": "fuse/controls/textcontrol/maxlines",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MaxLines",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MaxLines"
+            }
+          },
+          {
+            "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "alive/buttontext/minfontscale",
+              "parentId": "alive/buttontext",
+              "type": "UxProperty",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "alive/buttontext/minfontscale",
+              "href": "fuse/controls/textcontrol/minfontscale",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "MinFontScale",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.MinFontScale"
             }
           },
           {
@@ -2437,6 +2513,30 @@
         "items": [
           {
             "returns": {
+              "href": "uno/float",
+              "title": "float",
+              "fullyQualifiedTitle": "float"
+            },
+            "id": {
+              "id": "alive/buttontext/fontsizescaled",
+              "parentId": "alive/buttontext",
+              "type": "Property",
+              "modifiers": [
+                "public"
+              ]
+            },
+            "uri": {
+              "idUri": "alive/buttontext/fontsizescaled",
+              "href": "fuse/controls/textcontrol/fontsizescaled",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "FontSizeScaled",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.FontSizeScaled"
+            }
+          },
+          {
+            "returns": {
               "href": "uno/bool",
               "title": "bool",
               "fullyQualifiedTitle": "bool"
@@ -3901,6 +4001,26 @@
             "titles": {
               "indexTitle": "OnMaxLengthChanged",
               "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.OnMaxLengthChanged"
+            }
+          },
+          {
+            "id": {
+              "id": "alive/buttontext/onmaxlineschanged",
+              "parentId": "alive/buttontext",
+              "type": "Method",
+              "modifiers": [
+                "protected",
+                "virtual"
+              ]
+            },
+            "uri": {
+              "idUri": "alive/buttontext/onmaxlineschanged",
+              "href": "fuse/controls/textcontrol/onmaxlineschanged",
+              "isVirtual": true
+            },
+            "titles": {
+              "indexTitle": "OnMaxLinesChanged",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.TextControl.OnMaxLinesChanged"
             }
           },
           {

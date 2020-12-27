@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Charting",
       "namespaceUri": "fuse/charting",
       "packageName": "Fuse.Charting",
-      "packageVersion": "1.11.2"
+      "packageVersion": "0.1.0"
     },
     "inheritance": {
       "root": {
@@ -473,10 +473,7 @@
     },
     "comment": {
       "brief": "Common base for plot positioned elements.",
-      "full": "Common base for plot positioned elements.",
-      "attributes": {
-        "experimental": true
-      }
+      "full": "Common base for plot positioned elements."
     }
   },
   "tableOfContents": {
