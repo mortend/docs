@@ -1,0 +1,11 @@
+{
+  "name": "doc-export",
+  "private": true,
+  "devDependencies": {
+    "@fuse-open/fuselibs": "https://ci.appveyor.com/api/buildjobs/vru3l5c7135trkcv/artifacts/fuse-open-fuselibs-2.0.0-beta.3.tgz",
+    "@fuse-open/uno": "https://ci.appveyor.com/api/buildjobs/naxsv49na3uvrc67/artifacts/fuse-open-uno-2.0.0-beta.7.tgz"
+  },
+  "scripts": {
+    "build": "uno build docs --output-dir ../api-docs"
+  }
+}
