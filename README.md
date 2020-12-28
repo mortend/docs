@@ -16,7 +16,7 @@ The documentation is hosted on GitHub Pages, from the [gh-pages branch](https://
 
 ## Updating `api-docs`
 
-1. Run `cd doc-export` to enter the project used to build doc-files.
+1. Run `cd doc-export` to enter the project used to make doc-files.
 2. Run `npm install` to install dependencies.
-3. *Optional:* Run `npm install -S fuse-sdk` to upgrade to latest version of Fuse SDK.
+3. *Optional:* Run `npm install -S fuse-sdk` to upgrade to the latest version of Fuse SDK.
 4. Run `npm run build` to update `api-docs`.
