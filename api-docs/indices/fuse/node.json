@@ -6551,6 +6551,28 @@
       }
     },
     {
+      "comment": {
+        "brief": "Triggers if device has biometric sensor and user has already configure it",
+        "full": "Triggers if device has biometric sensor and user has already configure it\n\n## Example\n\n    <Panel>\n        <SupportBiometric>\n            <Button Text=\"Sign In With Biometric\">\n                <Clicked>\n                    <Authenticate />\n                </Clicked>\n            </Button>\n        </SupportBiometric>\n    </Panel>"
+      },
+      "id": {
+        "id": "fuse/supportbiometric",
+        "parentId": "fuse",
+        "type": "UxClass",
+        "modifiers": [
+          "public"
+        ]
+      },
+      "uri": {
+        "idUri": "fuse/supportbiometric",
+        "href": "fuse/supportbiometric"
+      },
+      "titles": {
+        "indexTitle": "SupportBiometric",
+        "fullyQualifiedIndexTitle": "Fuse.SupportBiometric"
+      }
+    },
+    {
       "id": {
         "id": "fuse/testing/javascripttest",
         "parentId": "fuse/testing",

@@ -1721,6 +1721,28 @@
     },
     {
       "comment": {
+        "brief": "Triggers if device has biometric sensor and user has already configure it",
+        "full": "Triggers if device has biometric sensor and user has already configure it\n\n## Example\n\n    <Panel>\n        <SupportBiometric>\n            <Button Text=\"Sign In With Biometric\">\n                <Clicked>\n                    <Authenticate />\n                </Clicked>\n            </Button>\n        </SupportBiometric>\n    </Panel>"
+      },
+      "id": {
+        "id": "fuse/supportbiometric",
+        "parentId": "fuse",
+        "type": "UxClass",
+        "modifiers": [
+          "public"
+        ]
+      },
+      "uri": {
+        "idUri": "fuse/supportbiometric",
+        "href": "fuse/supportbiometric"
+      },
+      "titles": {
+        "indexTitle": "SupportBiometric",
+        "fullyQualifiedIndexTitle": "Fuse.SupportBiometric"
+      }
+    },
+    {
+      "comment": {
         "brief": "Triggers when the element is added to the visual tree.",
         "full": "Triggers when the element is added to the visual tree.\n\n`AddingAnimation` is by default a backward animation, meaning it will\nanimate from progress 1 back to 0.\n\n## Example\n\nThe following example showcases a list that you can add elements to by\npressing a button. Elements added are animated in using an\n`AddingAnimation`:\n\n    <StackPanel Width=\"100%\">\n        <JavaScript>\n            var Observable = require('FuseJS/Observable');\n            var elements = Observable({value: \"Element\"});\n            function addElement() {\n                elements.add({value: \"Element\"});\n            }\n            module.exports = {elements, addElement};\n        </JavaScript>\n        <Each Items=\"{elements}\">\n            <Panel Width=\"100%\" >\n                <Text Value=\"{value}\" Alignment=\"CenterLeft\"/>\n                <AddingAnimation>\n                    <Move RelativeTo=\"Size\" Duration=\".2\" X=\"2\" />\n                </AddingAnimation>\n            </Panel>\n        </Each>\n        <Button Text=\"Add more\" Clicked=\"{addElement}\"/>\n    </StackPanel>"
       },

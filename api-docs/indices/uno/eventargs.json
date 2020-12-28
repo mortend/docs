@@ -20,6 +20,24 @@
   "descendants": [
     {
       "id": {
+        "id": "fuse/authargs",
+        "parentId": "fuse",
+        "type": "Class",
+        "modifiers": [
+          "public"
+        ]
+      },
+      "uri": {
+        "idUri": "fuse/authargs",
+        "href": "fuse/authargs"
+      },
+      "titles": {
+        "indexTitle": "AuthArgs",
+        "fullyQualifiedIndexTitle": "Fuse.AuthArgs"
+      }
+    },
+    {
+      "id": {
         "id": "fuse/controls/mapeventargs",
         "parentId": "fuse/controls",
         "type": "Class",
@@ -777,6 +795,24 @@
       "titles": {
         "indexTitle": "SelectionEventArgs",
         "fullyQualifiedIndexTitle": "Fuse.Selection.SelectionEventArgs"
+      }
+    },
+    {
+      "id": {
+        "id": "fuse/signinargs",
+        "parentId": "fuse",
+        "type": "Class",
+        "modifiers": [
+          "public"
+        ]
+      },
+      "uri": {
+        "idUri": "fuse/signinargs",
+        "href": "fuse/signinargs"
+      },
+      "titles": {
+        "indexTitle": "SignInArgs",
+        "fullyQualifiedIndexTitle": "Fuse.SignInArgs"
       }
     },
     {
