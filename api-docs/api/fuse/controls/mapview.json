@@ -23,7 +23,7 @@
       "namespaceTitle": "Fuse.Controls",
       "namespaceUri": "fuse/controls",
       "packageName": "Fuse.Maps",
-      "packageVersion": "2.0.0-beta.4"
+      "packageVersion": "2.0.0-beta.5"
     },
     "inheritance": {
       "root": {
@@ -4317,6 +4317,107 @@
             "titles": {
               "indexTitle": "setZoom(MapView, object[])",
               "fullyQualifiedIndexTitle": "Fuse.Controls.MapView.setZoom(Fuse.Controls.MapView, object[])"
+            }
+          },
+          {
+            "comment": {
+              "brief": "Zoom to make all of markers in the MapView is shown.",
+              "full": "Zoom to make all of markers in the MapView is shown.",
+              "attributes": {
+                "scriptMethod": {
+                  "name": "showAllMarkers",
+                  "parameters": [
+                    ""
+                  ]
+                }
+              }
+            },
+            "parameters": [
+              {
+                "name": "view",
+                "href": "fuse/controls/mapview",
+                "title": "MapView",
+                "fullyQualifiedTitle": "Fuse.Controls.MapView"
+              },
+              {
+                "name": "args",
+                "href": "uno/object",
+                "title": "object[]",
+                "fullyQualifiedTitle": "object[]"
+              }
+            ],
+            "id": {
+              "id": "fuse/controls/mapview/showallmarkers_f28de7ec",
+              "parentId": "fuse/controls/mapview",
+              "type": "JsMethod",
+              "modifiers": [
+                "private",
+                "static"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/mapview/showallmarkers_f28de7ec",
+              "href": "fuse/controls/mapview/showallmarkers_f28de7ec"
+            },
+            "titles": {
+              "indexTitle": "showAllMarkers(MapView, object[])",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.MapView.showAllMarkers(Fuse.Controls.MapView, object[])"
+            }
+          },
+          {
+            "comment": {
+              "brief": "Take a snapshot of MapView.",
+              "full": "Take a snapshot of MapView.\n\nuse this method to take a picture of the MapView, returning a promise with the path argument of where the picture is stored\n\nExamples:\n\n    <NativeViewHost>\n        <MapView ux:Name=\"MapView\" />\n    </NativeViewHost>\n    <JavaScript>\n        MapView.snapshot()\n            .then(function(path) {\n                console.log(path);\n            })\n            .catch(function(err) { });\n    </JavaScript>",
+              "attributes": {
+                "scriptMethod": {
+                  "name": "snapshot",
+                  "parameters": [
+                    ""
+                  ]
+                }
+              }
+            },
+            "returns": {
+              "href": "uno/threading/future_1",
+              "title": "Future<string>",
+              "fullyQualifiedTitle": "Uno.Threading.Future<string>"
+            },
+            "parameters": [
+              {
+                "name": "context",
+                "href": "fuse/scripting/context",
+                "title": "Context",
+                "fullyQualifiedTitle": "Fuse.Scripting.Context"
+              },
+              {
+                "name": "self",
+                "href": "fuse/controls/mapview",
+                "title": "MapView",
+                "fullyQualifiedTitle": "Fuse.Controls.MapView"
+              },
+              {
+                "name": "args",
+                "href": "uno/object",
+                "title": "object[]",
+                "fullyQualifiedTitle": "object[]"
+              }
+            ],
+            "id": {
+              "id": "fuse/controls/mapview/snapshot_3f078864",
+              "parentId": "fuse/controls/mapview",
+              "type": "JsMethod",
+              "modifiers": [
+                "private",
+                "static"
+              ]
+            },
+            "uri": {
+              "idUri": "fuse/controls/mapview/snapshot_3f078864",
+              "href": "fuse/controls/mapview/snapshot_3f078864"
+            },
+            "titles": {
+              "indexTitle": "snapshot(Context, MapView, object[])",
+              "fullyQualifiedIndexTitle": "Fuse.Controls.MapView.snapshot(Fuse.Scripting.Context, Fuse.Controls.MapView, object[])"
             }
           }
         ]

@@ -4,7 +4,7 @@
       "namespaceTitle": "Fuse",
       "namespaceUri": "fuse",
       "packageName": "Fuse.Common",
-      "packageVersion": "2.0.0-beta.4"
+      "packageVersion": "2.0.0-beta.5"
     },
     "returns": {
       "href": "uno/threading/idispatcher",
